@@ -10,4 +10,4 @@ RUN gem install bundler
 RUN bundle install
 
 COPY . .
-CMP ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
