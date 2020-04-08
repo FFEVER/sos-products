@@ -1,0 +1,7 @@
+default: &default
+  adapter: postgresql
+test:
+  <<: *default
+  database: travis_ci_test
+  username: travis
+  encoding: utf8
