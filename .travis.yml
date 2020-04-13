@@ -13,10 +13,9 @@ before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
 after_success:
   - sh .travis/deploy_dockerhub.sh
-  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
-#deploy:
-#  provider: heroku
-#  api_key:
-#    secure: "KZjzNMM5ZgyaEdOGKCT17A/nOYyffrvpzQle6k8uxW5k3eKWNBvTsdTTPK6xClT1Z4LkhW2A1xg0TTIQdeXnYyaiVK++nmWKZdhEq678FE9RN39+RCROFHi4KV1qxVrlCrfg4wm6gJmB1UrFjEItgB+cyw4QkxxA/uvdGrZBVh/enloFQS8kUKEmN+2AKxA0D14z8ycFola/NpgJL9WXPY1mgJXfldGT9z2N+y8HJA6EELkv3GgxXmHZ9ic6yMfdhN9rS3nMB4ydOvZhOSkKSRUSWARwWjx1NGD7w8n10mi3iJ15MFZLdAlpB5Lj++t4HOfuyYns+WGWLmStyWzqXBhS+7z4P0morlxZN5AP+ePbMreWXjP+kTeOHesLzcK6/LI9MZZyuMcWIFxlXuOsg61gPWhFZgvju5CvjA71w97xwNwBTjbjx9Be2LRR+fIf96on1ebNZOscq7KNr5sWLt0pNNcv+wC3bmyEz70fy0Qk+7qcIlCJiGfpctgxD+Zpp3x/4q0w5Yp9EAEvGBGC/bg4ye8cgMvMW/nLqB7GN10P7b6wf04zFCi/DwB6lQayaZw5tUp2V+ObLxxHTfX6HPUTxJo4r5IYG89Esm6gH+NbVbD34HDD9TcPELBgoF1ZZ/E0aw7E9Pq/sZC6fE+JOLO9pJoihthDohQW43aq4l0="
-#  app: sos-products
-#  run: "rake db:migrate"
+deploy:
+  provider: heroku
+  api_key:
+    secure: "KZjzNMM5ZgyaEdOGKCT17A/nOYyffrvpzQle6k8uxW5k3eKWNBvTsdTTPK6xClT1Z4LkhW2A1xg0TTIQdeXnYyaiVK++nmWKZdhEq678FE9RN39+RCROFHi4KV1qxVrlCrfg4wm6gJmB1UrFjEItgB+cyw4QkxxA/uvdGrZBVh/enloFQS8kUKEmN+2AKxA0D14z8ycFola/NpgJL9WXPY1mgJXfldGT9z2N+y8HJA6EELkv3GgxXmHZ9ic6yMfdhN9rS3nMB4ydOvZhOSkKSRUSWARwWjx1NGD7w8n10mi3iJ15MFZLdAlpB5Lj++t4HOfuyYns+WGWLmStyWzqXBhS+7z4P0morlxZN5AP+ePbMreWXjP+kTeOHesLzcK6/LI9MZZyuMcWIFxlXuOsg61gPWhFZgvju5CvjA71w97xwNwBTjbjx9Be2LRR+fIf96on1ebNZOscq7KNr5sWLt0pNNcv+wC3bmyEz70fy0Qk+7qcIlCJiGfpctgxD+Zpp3x/4q0w5Yp9EAEvGBGC/bg4ye8cgMvMW/nLqB7GN10P7b6wf04zFCi/DwB6lQayaZw5tUp2V+ObLxxHTfX6HPUTxJo4r5IYG89Esm6gH+NbVbD34HDD9TcPELBgoF1ZZ/E0aw7E9Pq/sZC6fE+JOLO9pJoihthDohQW43aq4l0="
+  app: sos-products
+  run: "rake db:migrate"
