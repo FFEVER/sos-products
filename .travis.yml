@@ -13,4 +13,9 @@ before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
 after_success:
   - sh .travis/deploy_dockerhub.sh
-  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
+deploy:
+  provider: heroku
+  api_key:
+    secure: "ImPJegc7JCC49SpC1Sy0eren4uyNqCbT13RxvBq0ifZMH2vXPWLhT+IrK6D6aJ6ClhlkOaOznYcElegWFPZsiTm+b8Cj5yUZvlGWYagRaFQhSaJ7FGUeErC3v435ea9tG3bIyByoC2oAj3zOg4CB2p1fnRdIF2qr1MnLEyS4goIxanr/xjrNrLnmgeHWbYubkcYm67KluFe3YL1l3gphioquGreiMcc1hYkR6uByb5e7dUHdJx8Ra38ZfwAGIqGAXmmPb6s85nsUYh7xG64GV2iNQLqTOon8EfKkuHIgWWj62emYZIwBCpEL59Np/sodoaSsgU4NJZyHIXgef/WE7T12O0ouozcIGFu8S5eMV8o64GJRmY9zsn5AKi8REaT1r2RB0q3IfGwFMIJ9X3k5lZo3lbSNOsWG3gWgjkpWzwqfQOPW6ynvb5qBKjfvfkgHGvmtnhw4NuCX7wb9Nxs2WQTvcqxlz4EOtdZrj+Gmh/+JpuLfWQuomER/YOC8Go96XTCMyYy0GAcP2KHovYBkK7BMchR4qIDF7eW9KDi9xvYdDvKeBcKfLeKw1uMSsK1BReFiWLl6Nx20T31kNNvpK6G6/pWe5F9nWxeuzqjQmfYmGKVvUNZw7etidi5sJT854JUw1Q+mNFZVf8noS19zkfJAEOy4WFG6fpXQmp+Csdo="
+  app: sos-products
+  run: "rake db:migrate"
