@@ -1,5 +1,4 @@
 class Api::V1::ProductsController < ApplicationController
-  before_action :find_product, only: %i[show update destroy]
 
   def index
     @products = Product.all
@@ -7,44 +6,8 @@ class Api::V1::ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.find(params[:id])
     render json: @product
   end
 
-  def create
-    @product = Product.new(product_params)
-    if @product.save
-      render json: @product, status: :created
-    else
-      render json: { error: "Unable to create product." }, status: :bad_request
-    end
-  end
-
-  def update
-    if @product
-      @product.update(product_params)
-      render json: { message: "Product successfully updated." }, status: :ok
-    else
-      render json: { error: "Unable to update product." }, status: :bad_request
-    end
-  end
-
-  def destroy
-    if @product
-      @product.destroy
-      render json: { message: "Product successfully deleted." }, status: :ok
-    else
-      render json: { error: "Unable to delete product." }, status: :bad_request
-    end
-
-  end
-
-  private
-
-  def product_params
-    params.require(:product).permit(:title, :user_id, :long_desc, :price, :stock, :sold_quantity)
-  end
-
-  def find_product
-    @product = Product.find(params[:id])
-  end
 end
