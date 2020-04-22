@@ -1,0 +1,60 @@
+[
+  {
+    "name_en": "Bags",
+    "name_th": "กระเป๋า",
+    "subcategories": [
+      {
+        "name_en": "Wallets",
+        "name_th": "กระเป๋าสตางค์"
+      },
+      {
+        "name_en": "Clutches",
+        "name_th": "คลัทช์"
+      },
+      {
+        "name_en": "Handbags",
+        "name_th": "กระเป๋าถือ"
+      }
+    ]
+  },
+  {
+    "name_en": "Camera & Photo",
+    "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
+    "subcategories": [
+      {
+        "name_en": "Digital Camera",
+        "name_th": "กล้องดิจิตอล"
+      },
+      {
+        "name_en": "Action Camera",
+        "name_th": "กล้องแอคชั่น"
+      },
+      {
+        "name_en": "CCTV",
+        "name_th": "กล้องวงจรปิด"
+      },
+      {
+        "name_en": "Lens",
+        "name_th": "เลนส์"
+      }
+    ]
+  },
+  {
+    "name_en": "Computer & Labtop",
+    "name_th": "คอมพิวเตอร์และแล็ปท็อป",
+    "subcategories": [
+      {
+        "name_en": "PC & Labtop",
+        "name_th": "คอมพิวเตอร์และแล็ปท็อป"
+      },
+      {
+        "name_en": "Computer Parts",
+        "name_th": "ชิ้นส่วนคอมพิวเตอร์"
+      },
+      {
+        "name_en": "Printer & Accesories",
+        "name_th": "ปริ้นเตอร์และอุปกรณ์เสริม"
+      }
+    ]
+  }
+]
