@@ -18,6 +18,10 @@ services:
       - "3000:3000"
     env_file:
       - ".env"
+    volumes:
+      - .:/app
+      - gem_cache:/usr/local/bundle/gems
 
 volumes:
   postgres:
+  gem_cache:
