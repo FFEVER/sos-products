@@ -3,7 +3,6 @@ class Api::V1::Users::ProductsController < ApplicationController
 
   def index
     @products = Product.where(user_id: params[:user_id])
-    render json: @products
   end
 
   def create
