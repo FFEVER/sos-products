@@ -8,4 +8,8 @@ class Category < ApplicationRecord
     self.products | self.subproducts
   end
 
+  def self.all_parents
+    self.where(parent: nil)
+  end
+
 end
