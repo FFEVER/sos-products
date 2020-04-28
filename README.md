@@ -69,14 +69,14 @@ Product api has the following endpoints:
 
 |Method| Endpoint|
 |-----|---------------------------------|
-GET|    /api/v1/products|
-GET|    /api/v1/products/:id|
-GET|    /api/vi/categories/:category_id/products|
-GET|    /api/v1/users/:user_id/products|
-POST|   /api/v1/users/:user_id/products|
-PATCH|  /api/v1/users/:user_id/products/:id|
-PUT|    /api/v1/users/:user_id/products/:id|
-DELETE| /api/v1/users/:user_id/products/:id|
+|GET|    /api/v1/products|
+|GET|    /api/v1/products/:id|
+|GET|    /api/vi/categories/:category_id/products|
+|GET|    /api/v1/users/:user_id/products|
+|POST|   /api/v1/users/:user_id/products|
+|PATCH|  /api/v1/users/:user_id/products/:id|
+|PUT|    /api/v1/users/:user_id/products/:id|
+|DELETE| /api/v1/users/:user_id/products/:id|
 
 ## The Product Object
 ### Attributes
