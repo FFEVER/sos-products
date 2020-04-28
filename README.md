@@ -44,14 +44,11 @@ Content-Type: application/json
 ```
 
 ## Errors
-**200 - OK**
-Everything worked as expected.
-
-**400 - Bad Request**
-The request was unacceptable, often due to missing a required parameter.
 
 | Code | Meaning |Description |
 |------|---------|-------------|
+|**200**|OK |Everything worked as expected. |
+|**400**| Bad Request |The request was unacceptable, often due to missing a required parameter. |
 |**401**| Unauthorized |No valid API key provided.|
 |**40**| Request Failed |The parameters were valid but the request failed.|
 |**40**| Forbidden|The API key doesn't have permissions to perform the request.|
