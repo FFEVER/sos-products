@@ -232,8 +232,6 @@ GET /api/v1/products
                 "parent_id": 5
             }
         }
-    }
-
     },
     {
         "id": 9,
