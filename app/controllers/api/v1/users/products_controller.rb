@@ -8,28 +8,28 @@ class Api::V1::Users::ProductsController < ApplicationController
   def create
     @product = Product.new(product_params.merge(user_id: params[:user_id]))
     if @product.save
-      render json: @product, status: :created
+      render status: :created
     else
-      render json: { error: 'Unable to create product.' }, status: :bad_request
+      render json: {error: @product.errors.full_messages}, status: :bad_request
     end
   end
 
   def update
-    if @product
-      @product.update(product_params)
-      render json: { message: 'Product successfully updated.' }, status: :ok
+    if @product.update(product_params)
+      render json: {message: 'Product successfully updated.'}, status: :ok
     else
-      render json: { error: 'Unable to update product.' }, status: :bad_request
+      render json: {error: @product.errors.full_messages}, status: :bad_request
     end
   end
 
   def destroy
-    if @product
-      @product.destroy
-      render json: { message: 'Product successfully deleted.' }, status: :ok
+    if @product.destroy
+      render json: {message: 'Product successfully deleted.'}, status: :ok
     else
-      render json: { error: 'Unable to delete product.' }, status: :bad_request
+      render json: {error: 'Unable to delete product.'}, status: :bad_request
     end
+
+  end
 
   def checkout
     if @product.checkout
