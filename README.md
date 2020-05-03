@@ -14,14 +14,18 @@
     - [Get a product with a paticular `id`](#get-a-product-with-a-paticular-id)
   - [Create a product](#create-a-product)
     - [POST Request (JSON)](#post-request-json)
-    - [Response](#response)
+    - [Created Response](#created-response)
+  - [Update a product](#update-a-product)
+    - [PUT Request (JSON)](#put-request-json)
+    - [Updated Response](#updated-response)
   - [Delete a product](#delete-a-product)
     - [DELETE Request](#delete-request)
-    - [Response](#response-1)
+    - [Deleted Response](#deleted-response)
   - [List of all products](#list-of-all-products)
     - [Get all products](#get-all-products)
     - [Get all products of a particular user (`user_id`)](#get-all-products-of-a-particular-user-userid)
     - [Get all products of a particular category (`category_id`)](#get-all-products-of-a-particular-category-category_id)
+  - [Checkout a product](#checkout-a-product)
 - [Category](#category)
     - [Category Overview](#category-overview)
     - [Retrieve Category Tree](#retrieve-category-tree)
@@ -48,6 +52,7 @@ Content-Type: application/json
 | Code | Meaning |Description |
 |------|---------|-------------|
 |**200**| OK |Everything worked as expected. |
+|**201**| Created |The resource was successfully created. |
 |**400**| Bad Request |The request was unacceptable, often due to missing a required parameter. |
 |**401**| Unauthorized |No valid API key provided.|
 |**402**| Request Failed |The parameters were valid but the request failed.|
@@ -67,14 +72,15 @@ To be updated
 ## Product Overview
 Product api has the following endpoints:
 
-|Method| Endpoint|
-|-----|---------------------------------|
-|GET|    /api/v1/products|
-|GET|    /api/v1/products/:id|
-|GET|    /api/vi/categories/:category_id/products|
-|GET|    /api/v1/users/:user_id/products|
-|POST|   /api/v1/users/:user_id/products|
-|PATCH|  /api/v1/users/:user_id/products/:id|
+|Method| Endpoint| Description |
+|-----|----------|-----------------------|
+|GET|    /api/v1/products| Get all products [[example]](#get-all-products) |
+|GET|    /api/v1/products/:id| Get a product with a paticular `id`[[example]](#get-a-product-with-a-paticular-id) |
+|POST|   /api/v1/products/:id/checkout | Checkout a product [[example]](#check-out-a-product) |
+|GET|    /api/vi/categories/:category_id/products| Get all products of a particular category [[example]](#get-all-products-of-a-particular-category-category_id) |
+|GET|    /api/v1/users/:user_id/products| Get all products of a particular user [[example]](#get-all-products-of-a-particular-user-userid) |
+|POST|   /api/v1/users/:user_id/products| Create a product [[example]](#create-a-product) |
+|PATCH|  /api/v1/users/:user_id/products/:id| Update a product [[example]](#update-a-product) |
 |PUT|    /api/v1/users/:user_id/products/:id|
 |DELETE| /api/v1/users/:user_id/products/:id|
 
@@ -143,14 +149,14 @@ Example: `POST /api/v1/users/2/products`
 	"product": {
 		"title": "New product title of user 2",
 		"long_desc": "This is description of the product",
-		"price": "This is a price of the product",
+		"price": 29.30,
 		"stock": 20,
-                "category_id": 8
+        "category_id": 8
 	}
 }
 ```
 
-### Response
+### Created Response
 
 Returns a newly created product if succeeded:
 ```json
@@ -159,9 +165,9 @@ Returns a newly created product if succeeded:
     "title": "New product title of user 2",
     "user_id": 2,
     "long_desc": "This is description of the product",
-    "price": 0.0,
+    "price": 29.30,
     "stock": 20,
-    "sold_quantity": null,
+    "sold_quantity": 0,
     "created_at": "2020-04-22T10:22:56.165Z",
     "updated_at": "2020-04-22T10:22:56.165Z",
     "categories": {
@@ -179,6 +185,51 @@ Returns a newly created product if succeeded:
 }
 ```
 
+## Update a product
+
+### PUT Request (JSON)
+
+Example: `PUT /api/v1/users/1/products/1`
+```json
+{
+    "product": {
+        "title": "This is the new Bag title",
+        "long_desc": "This is new description of the product",
+        "price": 900000,
+        "stock": 90,
+        "category_id": 1
+    }
+}
+```
+**Note**: 
+- All of the **attributes** are optional. You can update only a few attributes at a time.
+- You don't have to update `created_at` or `updated_at`. The server will handle it automatically.
+
+### Updated Response
+
+Return an updated product on succeeded.
+
+```json
+{
+    "id": 1,
+    "title": "This is the new Bag title",
+    "user_id": 1,
+    "long_desc": "This is new description of the product",
+    "price": 90000.00,
+    "stock": 90,
+    "sold_quantity": 12,
+    "created_at": "2020-04-23T08:41:17.875Z",
+    "updated_at": "2020-05-03T15:33:12.843Z",
+    "categories": {
+        "id": 1,
+        "name_en": "Bags",
+        "name_th": "กระเป๋า",
+        "parent_id": null,
+        "subcategories": {}
+    }
+}
+```
+
 ## Delete a product
 
 ### DELETE Request
@@ -186,7 +237,7 @@ Example: `DELETE /api/v1/users/2/products/13`
 
 ** No body required
 
-### Response
+### Deleted Response
 
 Returns a message if succeeded:
 ```json
@@ -365,6 +416,55 @@ GET /api/v1/users/:user_id/products
     ...
 ]
 ```
+
+## Checkout a product
+```
+POST /api/v1/products/:id/checkout
+```
+By calling this endpoint the `sold_quantity` will increase by **given quantity** and `stock` will decrease by a **given quantity**.
+
+**Example**: `POST /api/v1/products/1/checkout` with `json` body:
+```json
+{
+  "quantity": 4
+}
+```
+
+**Response (success):**
+
+On product id = 1, `sold_quantity` += 4 (from 0) and `stock` -= 4 (from 90)
+```json
+{
+    "id": 1,
+    "title": "Bag",
+    "user_id": 1,
+    "long_desc": "This is new description of the product",
+    "price": 90000.0,
+    "stock": 86,
+    "sold_quantity": 4,
+    "created_at": "2020-04-23T08:41:17.875Z",
+    "updated_at": "2020-05-03T16:03:50.114Z",
+    "categories": {
+        "id": 1,
+        "name_en": "Bags",
+        "name_th": "กระเป๋า",
+        "parent_id": null,
+        "subcategories": {}
+    }
+}
+```
+
+**Response (failed):**
+
+If `sold_quantity` less than 0 or the parameter `quantity` is invalid, server returns **400 Bad Request** and the following message:
+```json
+{
+    "error": "Unable to checkout."
+}
+```
+
+
+
 
 # Category
 
