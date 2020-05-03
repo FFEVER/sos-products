@@ -342,7 +342,7 @@ GET /api/v1/users/:user_id/products
         "long_desc": "This is a product two of user 1",
         "price": 500.0,
         "stock": 19,
-        "sold_quantity": null,
+        "sold_quantity": 40,
         "created_at": "2020-04-19T15:50:49.029Z",
         "updated_at": "2020-04-19T15:50:49.029Z",
         "categories": {
@@ -396,7 +396,7 @@ GET /api/v1/users/:user_id/products
         "long_desc": "This is a Digital Camera product",
         "price": 400000,
         "stock": 19,
-        "sold_quantity": null,
+        "sold_quantity": 40,
         "created_at": "2020-04-19T15:50:49.029Z",
         "updated_at": "2020-04-19T15:50:49.029Z",
         "categories": {
@@ -510,7 +510,7 @@ GET /api/v1/categories
 
 ## Retrieve Category by ID
 ```
-GET /api/v1/categories/:id          |
+GET /api/v1/categories/:id
 ```
 Retrieving a **parent category** will return the parent with its subcategories:
 ```json
