@@ -9,8 +9,8 @@ class Api::V1::ProductsController < ApplicationController
   end
 
   def checkout
-    if @product.checkout
-      render json: {message: 'Successfully checked out'}, status: :ok
+    if @product.checkout(checkout_params)
+      render status: :ok
     else
       render json: {error: 'Unable to checkout.'}, status: :bad_request
     end
@@ -20,6 +20,10 @@ class Api::V1::ProductsController < ApplicationController
 
   def find_product
     @product = Product.find(params[:id])
+  end
+
+  def checkout_params
+    params.require(:quantity)
   end
 
 

@@ -30,10 +30,15 @@ class Product < ApplicationRecord
     end
   end
 
-  def checkout
-    self.sold_quantity += 1
-    self.stock -= 1
-    save
+  def checkout(quantity)
+    if quantity.instance_of?(Integer)
+      self.sold_quantity += quantity
+      self.stock -= quantity
+      save
+    else
+      errors.add(:sold_quantity, "type must be integer.")
+      return false
+    end
   end
 
 

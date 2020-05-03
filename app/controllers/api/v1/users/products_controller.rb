@@ -16,7 +16,7 @@ class Api::V1::Users::ProductsController < ApplicationController
 
   def update
     if @product.update(product_params)
-      render json: {message: 'Product successfully updated.'}, status: :ok
+      render status: :ok
     else
       render json: {error: @product.errors.full_messages}, status: :bad_request
     end
