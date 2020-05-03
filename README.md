@@ -23,7 +23,7 @@
     - [Deleted Response](#deleted-response)
   - [List of all products](#list-of-all-products)
     - [Get all products](#get-all-products)
-    - [Get all products of a particular user (`user_id`)](#get-all-products-of-a-particular-user-userid)
+    - [Get all products of a particular user (`user_id`)](#get-all-products-of-a-particular-user-user_id)
     - [Get all products of a particular category (`category_id`)](#get-all-products-of-a-particular-category-category_id)
   - [Checkout a product](#checkout-a-product)
 - [Category](#category)
@@ -76,13 +76,13 @@ Product api has the following endpoints:
 |-----|----------|-----------------------|
 |GET|    /api/v1/products| Get all products [[example]](#get-all-products) |
 |GET|    /api/v1/products/:id| Get a product with a paticular `id`[[example]](#get-a-product-with-a-paticular-id) |
-|POST|   /api/v1/products/:id/checkout | Checkout a product [[example]](#check-out-a-product) |
+|POST|   /api/v1/products/:id/checkout | Checkout a product [[example]](#checkout-a-product) |
 |GET|    /api/vi/categories/:category_id/products| Get all products of a particular category [[example]](#get-all-products-of-a-particular-category-category_id) |
-|GET|    /api/v1/users/:user_id/products| Get all products of a particular user [[example]](#get-all-products-of-a-particular-user-userid) |
+|GET|    /api/v1/users/:user_id/products| Get all products of a particular user [[example]](#get-all-products-of-a-particular-user-user_id) |
 |POST|   /api/v1/users/:user_id/products| Create a product [[example]](#create-a-product) |
 |PATCH|  /api/v1/users/:user_id/products/:id| Update a product [[example]](#update-a-product) |
-|PUT|    /api/v1/users/:user_id/products/:id|
-|DELETE| /api/v1/users/:user_id/products/:id|
+|PUT|    /api/v1/users/:user_id/products/:id| Update a product [[example]](#update-a-product) |
+|DELETE| /api/v1/users/:user_id/products/:id| Delete a product [[example]](#delete-a-product) |
 
 ## The Product Object
 ### Attributes
@@ -469,10 +469,10 @@ If `sold_quantity` less than 0 or the parameter `quantity` is invalid, server re
 # Category
 
 ## Category Overview
-|Method| Endpoint|
-|-----|---------------------------------|
-| GET | /api/v1/categories              |
-| GET | /api/v1/categories/:id          |
+|Method| Endpoint| Description |
+|-----|----------|-----------------------|
+| GET | /api/v1/categories | Retrieve all categories (tree) [[example]](#retrieve-category-tree) |
+| GET | /api/v1/categories/:id | Retrieve a category by id [[example]](#retrieve-category-by-id) |
 
 ## Retrieve Category Tree
 ```
