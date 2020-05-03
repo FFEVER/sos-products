@@ -1,5 +1,5 @@
 class Api::V1::Users::ProductsController < ApplicationController
-  before_action :find_product, only: %i[show update destroy]
+  before_action :find_product, only: %i[show update destroy checkout]
 
   def index
     @products = Product.where(user_id: params[:user_id])
@@ -31,6 +31,12 @@ class Api::V1::Users::ProductsController < ApplicationController
       render json: { error: 'Unable to delete product.' }, status: :bad_request
     end
 
+  def checkout
+    if @product.checkout
+      render json: {message: 'Successfully checked out'}, status: :ok
+    else
+      render json: {error: 'Unable to checkout.'}, status: :bad_request
+    end
   end
 
   private

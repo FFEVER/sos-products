@@ -11,7 +11,11 @@ Rails.application.routes.draw do
       end
 
       scope module: 'users', path: 'users/:user_id' do
-        resources :products, except: %i[show]
+        resources :products, except: %i[show] do
+          member do
+            post 'checkout'
+          end
+        end
       end
     end
   end
