@@ -3,7 +3,12 @@ Rails.application.routes.draw do
   root to: 'welcome#index'
   namespace :api do
     namespace :v1 do
-      resources :products, only: %i[index show]
+      resources :products, only: %i[index show] do
+        member do
+          post 'checkout'
+        end
+      end
+
       resources :categories, only: %i[index show] do
         member do
           get 'products'
@@ -11,11 +16,7 @@ Rails.application.routes.draw do
       end
 
       scope module: 'users', path: 'users/:user_id' do
-        resources :products, except: %i[show] do
-          member do
-            post 'checkout'
-          end
-        end
+        resources :products, except: %i[show]
       end
     end
   end

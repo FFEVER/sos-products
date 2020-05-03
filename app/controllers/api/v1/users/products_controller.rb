@@ -31,14 +31,6 @@ class Api::V1::Users::ProductsController < ApplicationController
 
   end
 
-  def checkout
-    if @product.checkout
-      render json: {message: 'Successfully checked out'}, status: :ok
-    else
-      render json: {error: 'Unable to checkout.'}, status: :bad_request
-    end
-  end
-
   private
 
   def product_params
