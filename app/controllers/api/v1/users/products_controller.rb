@@ -2,7 +2,12 @@ class Api::V1::Users::ProductsController < ApplicationController
   before_action :find_product, only: %i[show update destroy checkout]
 
   def index
-    @products = Product.where(user_id: params[:user_id])
+    @products_of_user = Product.where(user_id: params[:user_id])
+    @products = @products_of_user.page(params[:page])
+    @total_pages = @products.total_pages
+    @current_page = @products.current_page
+    @total_products = @products_of_user.count
+    @limit_per_page = @products.limit_value
   end
 
   def create
