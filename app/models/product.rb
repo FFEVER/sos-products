@@ -8,6 +8,7 @@ class Product < ApplicationRecord
   validates :stock, presence: true, numericality: {greater_than_or_equal_to: 0, less_than_or_equal_to: 1_000_000}
   validates :categories, presence: true
 
+  paginates_per 15
 
   def category_tree
     category = categories.first
@@ -37,7 +38,7 @@ class Product < ApplicationRecord
       save
     else
       errors.add(:sold_quantity, "type must be integer.")
-      return false
+      false
     end
   end
 
