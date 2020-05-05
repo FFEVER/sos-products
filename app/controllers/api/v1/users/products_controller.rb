@@ -1,5 +1,7 @@
 class Api::V1::Users::ProductsController < ApplicationController
-  before_action :find_product, only: %i[show update destroy checkout]
+  before_action :authorize_admin, if: :require_authorization?
+  before_action :verify_user, only: %i[create destroy], if: :require_authorization?
+  before_action :find_product, only: %i[show update destroy]
 
   def index
     @products_of_user = Product.where(user_id: params[:user_id])
@@ -15,7 +17,7 @@ class Api::V1::Users::ProductsController < ApplicationController
     if @product.save
       render status: :created
     else
-      render json: {error: @product.errors.full_messages}, status: :bad_request
+      render json: {errors: @product.errors.full_messages}, status: :bad_request
     end
   end
 
@@ -23,7 +25,7 @@ class Api::V1::Users::ProductsController < ApplicationController
     if @product.update(product_params)
       render status: :ok
     else
-      render json: {error: @product.errors.full_messages}, status: :bad_request
+      render json: {errors: @product.errors.full_messages}, status: :bad_request
     end
   end
 
@@ -31,9 +33,8 @@ class Api::V1::Users::ProductsController < ApplicationController
     if @product.destroy
       render json: {message: 'Product successfully deleted.'}, status: :ok
     else
-      render json: {error: 'Unable to delete product.'}, status: :bad_request
+      render json: {errors: 'Unable to delete product.'}, status: :bad_request
     end
-
   end
 
   private
@@ -43,6 +44,12 @@ class Api::V1::Users::ProductsController < ApplicationController
   end
 
   def find_product
-    @product = Product.find(params[:id])
+    @product = Product.find_by(id: params[:id], user_id: params[:user_id])
+    render json: {errors: 'Not Found'}, status: :not_found if @product.nil?
   end
+
+  def verify_user
+    render json: {errors: 'No Permission'}, status: :forbidden if params[:user_id] != @jwt_decoded[:user_id].to_s
+  end
+
 end

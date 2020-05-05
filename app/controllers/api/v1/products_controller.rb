@@ -16,7 +16,7 @@ class Api::V1::ProductsController < ApplicationController
     if @product.checkout(checkout_params)
       render status: :ok
     else
-      render json: {error: 'Unable to checkout.'}, status: :bad_request
+      render json: {errors: 'Unable to checkout.'}, status: :bad_request
     end
   end
 
