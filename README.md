@@ -66,7 +66,62 @@ Content-Type: application/json
 To be updated
 
 ## Pagination
-To be updated
+Supported endpoints:
+
+|Method| Endpoint| Description |
+|-----|----------|-----------------------|
+|GET|    /api/v1/products| Get all products [[example]](#get-all-products) |
+|GET|    /api/vi/categories/:category_id/products| Get all products of a particular category [[example]](#get-all-products-of-a-particular-category-category_id) |
+|GET|    /api/v1/users/:user_id/products| Get all products of a particular user [[example]](#get-all-products-of-a-particular-user-user_id) |
+
+**Usage:**
+
+- Add a query parameter called `page` to get products from the given page number.
+- If no `page` given, it will return result from default `page=1`.
+- Default limit products per page is **15**
+
+**Example:**
+
+```
+GET /api/v1/products?page=1
+```
+
+**Response**
+
+```json
+{
+    "products": [
+        {
+            "id": 5,
+            "title": "New product title",
+            "user_id": 1,
+            "long_desc": "This is description of the product",
+            "price": 18.9,
+            "stock": 87,
+            "sold_quantity": 3,
+            "created_at": "2020-05-03T16:36:35.161Z",
+            "updated_at": "2020-05-03T16:37:19.929Z",
+            "categories": {
+                "id": 5,
+                "name_en": "Camera & Photo",
+                "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
+                "parent_id": null,
+                "subcategories": {
+                    "id": 8,
+                    "name_en": "CCTV",
+                    "name_th": "กล้องวงจรปิด",
+                    "parent_id": 5
+                }
+            }
+        },
+        ...
+    ],
+    "current_page": 1,
+    "total_pages": 1,
+    "total_products": 3,
+    "limit_per_page": 15
+}
+```
 
 # Product
 ## Product Overview
