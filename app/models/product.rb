@@ -11,6 +11,8 @@ class Product < ApplicationRecord
   paginates_per 15
 
   def category_tree
+    return {} if categories.blank?
+
     category = categories.first
     if category.parent
       parent = category.parent.attributes
@@ -23,12 +25,10 @@ class Product < ApplicationRecord
   end
 
   def category_id=(id)
-    if Category.exists? id: id
-      categories.destroy_all
-      categories << Category.find(id)
-    else
-      errors.add(:categories, "Cannot find category with id = #{id}")
-    end
+    return unless Category.exists? id: id
+
+    categories.destroy_all
+    categories << Category.find(id)
   end
 
   def checkout(quantity)

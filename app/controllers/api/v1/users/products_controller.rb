@@ -2,6 +2,7 @@ class Api::V1::Users::ProductsController < ApplicationController
   before_action :authorize_admin, if: :require_authorization?
   before_action :verify_user, only: %i[create destroy], if: :require_authorization?
   before_action :find_product, only: %i[show update destroy]
+  before_action :find_category, only: %i[create update]
 
   def index
     @products_of_user = Product.where(user_id: params[:user_id])
@@ -46,6 +47,13 @@ class Api::V1::Users::ProductsController < ApplicationController
   def find_product
     @product = Product.find_by(id: params[:id], user_id: params[:user_id])
     render json: {errors: 'Not Found'}, status: :not_found if @product.nil?
+  end
+
+  def find_category
+    return unless product_params.key? :category_id
+
+    found = Category.exists? id: product_params[:category_id]
+    render json: {errors: 'Category Not Found'}, status: :not_found unless found
   end
 
   def verify_user
