@@ -1,0 +1,1676 @@
+[
+  {
+    "name_en": "Women's Clothing",
+    "name_th": "เสื้อผ้าผู้หญิง",
+    "subcategories": [
+      {
+        "name_en": "Dresses",
+        "name_th": "เดรส"
+      },
+      {
+        "name_en": "Blouses & Shirts",
+        "name_th": "เสื้อเบลาส์และเสื้อเชิร์ต"
+      },
+      {
+        "name_en": "Hoodies & Sweatshirts",
+        "name_th": "เสื้อสเวตเตอร์"
+      },
+      {
+        "name_en": "Sweaters",
+        "name_th": "เสื้อกันหนาว"
+      },
+      {
+        "name_en": "Jackets & Coats",
+        "name_th": "แจ็คเก็ตและเสื้อโค้ต"
+      },
+      {
+        "name_en": "Bottoms",
+        "name_th": "กางเกงและกระโปรง"
+      },
+      {
+        "name_en": "Rompers",
+        "name_th": "เสื้อคลุมหลวม ๆ"
+      },
+      {
+        "name_en": "Tops & Tees",
+        "name_th": "เสื้อและเสื้อยืด"
+      },
+      {
+        "name_en": "Jumpsuits",
+        "name_th": "จั๊มสูท"
+      },
+      {
+        "name_en": "Bodysuits",
+        "name_th": "บอดี้สูท"
+      },
+      {
+        "name_en": "Suits & Sets",
+        "name_th": "ชุดสูทและชุดเซต"
+      },
+      {
+        "name_en": "Dress",
+        "name_th": "เดรส"
+      },
+      {
+        "name_en": "Jeans",
+        "name_th": "กางเกงยีนส์"
+      },
+      {
+        "name_en": "Skirt",
+        "name_th": "กระโปรง"
+      },
+      {
+        "name_en": "Swimsuit",
+        "name_th": "ชุดว่ายน้ำ"
+      },
+      {
+        "name_en": "Women Tops",
+        "name_th": "เสื้อสตรี"
+      }
+    ]
+  },
+  {
+    "name_en": "Men's Clothing",
+    "name_th": "เสื้อผ้าผู้ชาย",
+    "subcategories": [
+      {
+        "name_en": "Hoodies & Sweatshirts",
+        "name_th": "เสื้อสเวตเตอร์"
+      },
+      {
+        "name_en": "Tops & Tees",
+        "name_th": "เสื้อและเสื้อยืด"
+      },
+      {
+        "name_en": "Jackets & Coats",
+        "name_th": "แจ็คเก็ตและเสื้อโค้ต"
+      },
+      {
+        "name_en": "Pants",
+        "name_th": "กางเกง"
+      },
+      {
+        "name_en": "Shirts",
+        "name_th": "เสื้อ"
+      },
+      {
+        "name_en": "Jeans",
+        "name_th": "กางเกงยีนส์"
+      },
+      {
+        "name_en": "Sweaters",
+        "name_th": "เสื้อกันหนาว"
+      },
+      {
+        "name_en": "Suits & Blazers",
+        "name_th": "ชุดสูทและเสื้อคลุม"
+      },
+      {
+        "name_en": "Casual Shorts",
+        "name_th": "กางเกงขาสั้นลำลอง"
+      },
+      {
+        "name_en": "Men's Sets",
+        "name_th": "ชุดของผู้ชาย"
+      },
+      {
+        "name_en": "Board Shorts",
+        "name_th": "กางเกงขาสั้นบอร์ด"
+      }
+    ]
+  },
+  {
+    "name_en": "Cellphones & Telecommunications",
+    "name_th": "โทรศัพท์ & โทรคมนาคม",
+    "subcategories": [
+      {
+        "name_en": "Cellphones",
+        "name_th": "โทรศัพท์มือถือ"
+      },
+      {
+        "name_en": "iPhones",
+        "name_th": "iPhones"
+      },
+      {
+        "name_en": "Feature Phones",
+        "name_th": "โทรศัพท์ทั่วไป"
+      },
+      {
+        "name_en": "Refurbished Phones",
+        "name_th": "โทรศัพท์ตกแต่งใหม่"
+      },
+      {
+        "name_en": "Mobile Phone Accessories",
+        "name_th": "อุปกรณ์เสริมโทรศัพท์มือถือ"
+      },
+      {
+        "name_en": "Mobile Phone Parts",
+        "name_th": "อะไหล่โทรศัพท์มือถือ"
+      },
+      {
+        "name_en": "Phone Bags & Cases",
+        "name_th": "กระเป๋าและกรณีโทรศัพท์"
+      },
+      {
+        "name_en": "Communication Equipments",
+        "name_th": "อุปกรณ์สื่อสาร"
+      },
+      {
+        "name_en": "Walkie Talkie",
+        "name_th": "เครื่องส่งรับวิทยุ"
+      },
+      {
+        "name_en": "Walkie Talkie Parts & Accessories",
+        "name_th": "Walkie Talkie อะไหล่และอุปกรณ์เสริม"
+      },
+      {
+        "name_en": "Telephones & Accessories",
+        "name_th": "โทรศัพท์ & อุปกรณ์เสริม"
+      }
+    ]
+  },
+  {
+    "name_en": "Computer & Office",
+    "name_th": "คอมพิวเตอร์และสำนักงาน",
+    "subcategories": [
+      {
+        "name_en": "Office Electronics",
+        "name_th": "เครื่องใช้สำนักงาน"
+      },
+      {
+        "name_en": "Computer Peripherals",
+        "name_th": "อุปกรณ์ต่อพ่วงคอมพิวเตอร์"
+      },
+      {
+        "name_en": "Laptops",
+        "name_th": "แล็ปท็อป"
+      },
+      {
+        "name_en": "Tablets",
+        "name_th": "แท็บเล็ต"
+      },
+      {
+        "name_en": "Storage Devices",
+        "name_th": "อุปกรณ์เก็บข้อมูล"
+      },
+      {
+        "name_en": "Computer Components",
+        "name_th": "ส่วนประกอบคอมพิวเตอร์"
+      },
+      {
+        "name_en": "Networking",
+        "name_th": "ระบบเครือข่าย"
+      },
+      {
+        "name_en": "Mouse & Keyboards",
+        "name_th": "เมาส์และคีย์บอร์ด"
+      },
+      {
+        "name_en": "Tablet Accessories",
+        "name_th": "อุปกรณ์เสริมแท็บเล็ต"
+      },
+      {
+        "name_en": "Laptop Accessories",
+        "name_th": "อุปกรณ์เสริมแล็ปท็อป"
+      },
+      {
+        "name_en": "Computer Cables & Connectors",
+        "name_th": "สายเคเบิลและตัวเชื่อมต่อคอมพิวเตอร์"
+      },
+      {
+        "name_en": "Demo Board & Accessories",
+        "name_th": "บอร์ดสาธิต & อุปกรณ์เสริม"
+      },
+      {
+        "name_en": "Mini PC",
+        "name_th": "มินิพีซี"
+      },
+      {
+        "name_en": "Industrial Computer & Accessories",
+        "name_th": "คอมพิวเตอร์อุตสาหกรรมและอุปกรณ์เสริม"
+      },
+      {
+        "name_en": "Desktops",
+        "name_th": "เดสก์ท็"
+      },
+      {
+        "name_en": "Servers",
+        "name_th": "เซิร์ฟเวอร์"
+      },
+      {
+        "name_en": "Device Cleaners",
+        "name_th": "อุปกรณ์ทำความสะอาด"
+      },
+      {
+        "name_en": "Laptop Parts",
+        "name_th": "อะไหล่แล็ปท็อป"
+      },
+      {
+        "name_en": "Tablet Parts",
+        "name_th": "อะไหล่แท็บเล็ต"
+      },
+      {
+        "name_en": "Office Software",
+        "name_th": "ซอฟต์แวร์สำนักงาน"
+      }
+    ]
+  },
+  {
+    "name_en": "Consumer Electronics",
+    "name_th": "เครื่องใช้ไฟฟ้า",
+    "subcategories": [
+      {
+        "name_en": "Portable Audio & Video",
+        "name_th": "เสียงและวิดีโอแบบพกพา"
+      },
+      {
+        "name_en": "Smart Electronics",
+        "name_th": "สมาร์ทอิเล็กทรอนิคส์"
+      },
+      {
+        "name_en": "Home Audio & Video",
+        "name_th": "เครื่องเสียงและวิดีโอในบ้าน"
+      },
+      {
+        "name_en": "Accessories & Parts",
+        "name_th": "อุปกรณ์และอะไหล่"
+      },
+      {
+        "name_en": "Camera & Photo",
+        "name_th": "กล้องและภาพถ่าย"
+      },
+      {
+        "name_en": "Electronic Cigarettes",
+        "name_th": "บุหรี่อิเล็กทรอนิกส์"
+      },
+      {
+        "name_en": "Earphones & Headphones",
+        "name_th": "หูฟัง & หูฟัง"
+      },
+      {
+        "name_en": "Wearable Devices",
+        "name_th": "อุปกรณ์สวมใส่"
+      },
+      {
+        "name_en": "Video Games",
+        "name_th": "วีดีโอเกมส์"
+      },
+      {
+        "name_en": "Sports & Action Video Cameras",
+        "name_th": "กล้องวิดีโอกีฬาและแอ็คชั่น"
+      },
+      {
+        "name_en": "Speakers",
+        "name_th": "ลำโพง"
+      },
+      {
+        "name_en": "360° Video Cameras & Accessories",
+        "name_th": "กล้องวิดีโอ & อุปกรณ์เสริม 360 °"
+      },
+      {
+        "name_en": "Home Electronic Accessories",
+        "name_th": "อุปกรณ์อิเล็กทรอนิกส์ในบ้าน"
+      },
+      {
+        "name_en": "VR/AR Devices",
+        "name_th": "อุปกรณ์ VR / AR"
+      },
+      {
+        "name_en": "Robot",
+        "name_th": "หุ่นยนต์"
+      },
+      {
+        "name_en": "HIFI Devices",
+        "name_th": "อุปกรณ์ HIFI"
+      },
+      {
+        "name_en": "Live Equipment",
+        "name_th": "อุปกรณ์ถ่ายทอดสด"
+      },
+      {
+        "name_en": "Power Source",
+        "name_th": "แหล่งพลังงาน"
+      }
+    ]
+  },
+  {
+    "name_en": "Jewelry & Accessories",
+    "name_th": "อัญมณีและเครื่องประดับ",
+    "subcategories": [
+      {
+        "name_en": "Fine Jewelry",
+        "name_th": "เครื่องประดับ Fine"
+      },
+      {
+        "name_en": "Necklaces & Pendants",
+        "name_th": "สร้อยคอและจี้"
+      },
+      {
+        "name_en": "Earrings",
+        "name_th": "ต่างหู"
+      },
+      {
+        "name_en": "Rings",
+        "name_th": "แหวน"
+      },
+      {
+        "name_en": "Bracelets & Bangles",
+        "name_th": "กำไลและกำไล"
+      },
+      {
+        "name_en": "Jewelry Sets & More",
+        "name_th": "ชุดเครื่องประดับและอื่น ๆ"
+      },
+      {
+        "name_en": "Beads & Jewelry Making",
+        "name_th": "การทำลูกปัดและเครื่องประดับ"
+      },
+      {
+        "name_en": "Wedding & Engagement Jewelry",
+        "name_th": "เครื่องประดับจัดงานแต่งงานและหมั้น"
+      },
+      {
+        "name_en": "Jewelry making",
+        "name_th": "การทำเครื่องประดับ"
+      }
+    ]
+  },
+  {
+    "name_en": "Home & Garden",
+    "name_th": "บ้านและสวน",
+    "subcategories": [
+      {
+        "name_en": "Kitchen,Dining & Bar",
+        "name_th": "ห้องครัวห้องอาหารและบาร์"
+      },
+      {
+        "name_en": "Home Decor",
+        "name_th": "การตกแต่งบ้าน"
+      },
+      {
+        "name_en": "Home Textile",
+        "name_th": "สิ่งทอหน้าแรก"
+      },
+      {
+        "name_en": "Arts,Crafts & Sewing",
+        "name_th": "ศิลปะหัตถกรรม & จักรเย็บผ้า"
+      },
+      {
+        "name_en": "Festive & Party Supplies",
+        "name_th": "อุปกรณ์การเฉลิมฉลองและงานเลี้ยง"
+      },
+      {
+        "name_en": "Home Storage & Organization",
+        "name_th": "การจัดเก็บบ้านและองค์กร"
+      },
+      {
+        "name_en": "Bathroom Products",
+        "name_th": "ผลิตภัณฑ์ห้องน้ำ"
+      },
+      {
+        "name_en": "Household Cleaning",
+        "name_th": "การทำความสะอาดของใช้ในครัวเรือน"
+      },
+      {
+        "name_en": "Pet Products",
+        "name_th": "ผลิตภัณฑ์สัตว์เลี้ยง"
+      },
+      {
+        "name_en": "Garden Supplies",
+        "name_th": "อุปกรณ์ทำสวน"
+      },
+      {
+        "name_en": "Household Merchandises",
+        "name_th": "ของใช้ในครัวเรือน"
+      }
+    ]
+  },
+  {
+    "name_en": "Luggage & Bags",
+    "name_th": "กระเป๋าและกระเป๋า",
+    "subcategories": [
+      {
+        "name_en": "Women's Bags",
+        "name_th": "กระเป๋าสตรี"
+      },
+      {
+        "name_en": "Men's Bags",
+        "name_th": "กระเป๋าผู้ชาย"
+      },
+      {
+        "name_en": "Backpacks",
+        "name_th": "เป้สะพายหลัง"
+      },
+      {
+        "name_en": "Wallets",
+        "name_th": "กระเป๋าสตางค์"
+      },
+      {
+        "name_en": "Kids & Baby's Bags",
+        "name_th": "กระเป๋าเด็กและทารก"
+      },
+      {
+        "name_en": "Luggage & Travel Bags",
+        "name_th": "กระเป๋าและกระเป๋าเดินทาง"
+      },
+      {
+        "name_en": "Functional Bags",
+        "name_th": "กระเป๋าอเนกประสงค์"
+      },
+      {
+        "name_en": "Coin Purses & Holders",
+        "name_th": "กระเป๋าและที่ใส่เหรียญ"
+      },
+      {
+        "name_en": "Bag Parts & Accessories",
+        "name_th": "กระเป๋าอะไหล่และอุปกรณ์เสริม"
+      }
+    ]
+  },
+  {
+    "name_en": "Shoes",
+    "name_th": "รองเท้า",
+    "subcategories": [
+      {
+        "name_en": "Women's Shoes",
+        "name_th": "รองเท้าสตรี"
+      },
+      {
+        "name_en": "Women's Flats",
+        "name_th": "รองเท้าส้นเตี้ยสตรี"
+      },
+      {
+        "name_en": "Women's Pumps",
+        "name_th": "ปั๊มสตรี"
+      },
+      {
+        "name_en": "Men's Shoes",
+        "name_th": "รองเท้าผู้ชาย"
+      },
+      {
+        "name_en": "Men's Casual Shoes",
+        "name_th": "รองเท้าลำลองผู้ชาย"
+      },
+      {
+        "name_en": "Women's Vulcanize Shoes",
+        "name_th": "รองเท้า Vulcanize ของผู้หญิง"
+      },
+      {
+        "name_en": "Men's Vulcanize Shoes",
+        "name_th": "รองเท้าวัลคาไนชาย"
+      },
+      {
+        "name_en": "Women's Boots",
+        "name_th": "รองเท้าบูทผู้หญิง"
+      },
+      {
+        "name_en": "Men's Boots",
+        "name_th": "รองเท้าบูทผู้ชาย"
+      },
+      {
+        "name_en": "Shoe Accessories",
+        "name_th": "อุปกรณ์เสริมรองเท้า"
+      }
+    ]
+  },
+  {
+    "name_en": "Mother & Kids",
+    "name_th": "แม่และเด็ก",
+    "subcategories": [
+      {
+        "name_en": "Girls' Baby Clothing",
+        "name_th": "เสื้อผ้าเด็กผู้หญิง"
+      },
+      {
+        "name_en": "Boys' Baby Clothing",
+        "name_th": "เสื้อผ้าเด็กผู้ชาย"
+      },
+      {
+        "name_en": "Girls' Clothing",
+        "name_th": "เสื้อผ้าเด็กผู้หญิง"
+      },
+      {
+        "name_en": "Boys' Clothing",
+        "name_th": "เสื้อผ้าเด็กผู้ชาย"
+      },
+      {
+        "name_en": "Children's Shoes",
+        "name_th": "รองเท้าเด็ก"
+      },
+      {
+        "name_en": "Activity & Gear",
+        "name_th": "กิจกรรมและอุปกรณ์"
+      },
+      {
+        "name_en": "Nappy Changing",
+        "name_th": "ผ้าอ้อมเปลี่ยน"
+      },
+      {
+        "name_en": "Baby Care",
+        "name_th": "ดูแลลูกน้อย"
+      },
+      {
+        "name_en": "Baby Bedding",
+        "name_th": "เตียงเด็กอ่อน"
+      },
+      {
+        "name_en": "Safety Equipment",
+        "name_th": "อุปกรณ์ความปลอดภัย"
+      },
+      {
+        "name_en": "Feeding",
+        "name_th": "การให้อาหาร"
+      },
+      {
+        "name_en": "Matching Family Outfits",
+        "name_th": "การจับคู่ชุดครอบครัว"
+      },
+      {
+        "name_en": "Baby Shoes",
+        "name_th": "รองเท้าเด็ก"
+      },
+      {
+        "name_en": "Toilet Training",
+        "name_th": "การฝึกเข้าห้องน้ำ"
+      },
+      {
+        "name_en": "Pregnancy & Maternity",
+        "name_th": "การตั้งครรภ์และการคลอดบุตร"
+      },
+      {
+        "name_en": "Baby Souvenirs",
+        "name_th": "ของที่ระลึกสำหรับเด็ก"
+      },
+      {
+        "name_en": "Baby Furniture",
+        "name_th": "เฟอร์นิเจอร์เด็ก"
+      },
+      {
+        "name_en": "Baby Food",
+        "name_th": "อาหารเด็ก"
+      },
+      {
+        "name_en": "Accessories",
+        "name_th": "เครื่องประดับ"
+      },
+      {
+        "name_en": "Baby Stroller",
+        "name_th": "รถเข็นเด็กทารก"
+      },
+      {
+        "name_en": "Car Seats & Accessories",
+        "name_th": "เบาะรถยนต์และอุปกรณ์เสริม"
+      }
+    ]
+  },
+  {
+    "name_en": "Sports & Entertainment",
+    "name_th": "กีฬาและความบันเทิง",
+    "subcategories": [
+      {
+        "name_en": "Sports Clothing",
+        "name_th": "ชุดกีฬา"
+      },
+      {
+        "name_en": "Sneakers",
+        "name_th": "รองเท้าผ้าใบ"
+      },
+      {
+        "name_en": "Cycling",
+        "name_th": "ขี่จักรยาน"
+      },
+      {
+        "name_en": "Fishing",
+        "name_th": "ประมง"
+      },
+      {
+        "name_en": "Camping & Hiking",
+        "name_th": "แคมป์ปิ้งและเดินป่า"
+      },
+      {
+        "name_en": "Swimming",
+        "name_th": "สระว่ายน้ำ"
+      },
+      {
+        "name_en": "Musical Instruments",
+        "name_th": "เครื่องดนตรี"
+      },
+      {
+        "name_en": "Hunting",
+        "name_th": "การล่าสัตว์"
+      },
+      {
+        "name_en": "Fitness & Body Building",
+        "name_th": "อาคารฟิตเนสและเพาะกาย"
+      },
+      {
+        "name_en": "Water Sports",
+        "name_th": "กีฬาทางน้ำ"
+      },
+      {
+        "name_en": "Team Sports",
+        "name_th": "ทีมกีฬา"
+      },
+      {
+        "name_en": "Racquet Sports",
+        "name_th": "กีฬาแร็กเก็ต"
+      },
+      {
+        "name_en": "Golf",
+        "name_th": "กอล์ฟ"
+      },
+      {
+        "name_en": "Running",
+        "name_th": "วิ่ง"
+      },
+      {
+        "name_en": "Shooting",
+        "name_th": "การยิง"
+      },
+      {
+        "name_en": "Skiing & Snowboarding",
+        "name_th": "การเล่นสกีและสโนว์บอร์ด"
+      },
+      {
+        "name_en": "Sports Accessories",
+        "name_th": "อุปกรณ์กีฬา"
+      },
+      {
+        "name_en": "Roller Skates, Skateboards & Scooters",
+        "name_th": "โรลเลอร์สเกตสเก็ตบอร์ดและสกูตเตอร์"
+      },
+      {
+        "name_en": "Horse Racing",
+        "name_th": "การแข่งม้า"
+      },
+      {
+        "name_en": "Bowling",
+        "name_th": "โบว์ลิ่ง"
+      },
+      {
+        "name_en": "Entertainment",
+        "name_th": "การบันเทิง"
+      },
+      {
+        "name_en": "Other Sports & Entertainment",
+        "name_th": "กีฬาและความบันเทิงอื่น ๆ"
+      },
+      {
+        "name_en": "Sports Bags",
+        "name_th": "กระเป๋ากีฬา"
+      }
+    ]
+  },
+  {
+    "name_en": "Beauty & Health",
+    "name_th": "ความงาม & สุขภาพ",
+    "subcategories": [
+      {
+        "name_en": "Nails Art & Tools",
+        "name_th": "เพ้นท์เล็บ & เครื่องมือ"
+      },
+      {
+        "name_en": "Makeup",
+        "name_th": "แต่งหน้า"
+      },
+      {
+        "name_en": "Health Care",
+        "name_th": "ดูแลสุขภาพ"
+      },
+      {
+        "name_en": "Skin Care",
+        "name_th": "การดูแลผิว"
+      },
+      {
+        "name_en": "Hair Care & Styling",
+        "name_th": "ผลิตภัณฑ์ดูแลเส้นผมและจัดแต่งทรงผม"
+      },
+      {
+        "name_en": "Shaving & Hair Removal",
+        "name_th": "การโกนและกำจัดขน"
+      },
+      {
+        "name_en": "Sex Products",
+        "name_th": "ผลิตภัณฑ์ทางเพศ"
+      },
+      {
+        "name_en": "Beauty Essentials",
+        "name_th": "ข้อมูลสำคัญเกี่ยวกับความงาม"
+      },
+      {
+        "name_en": "Tattoo & Body Art",
+        "name_th": "ศิลปะรอยสักและร่างกาย"
+      },
+      {
+        "name_en": "Bath & Shower",
+        "name_th": "อ่างอาบน้ำและฝักบัว"
+      },
+      {
+        "name_en": "Fragrances & Deodorants",
+        "name_th": "น้ำหอมและยาดับกลิ่น"
+      },
+      {
+        "name_en": "Oral Hygiene",
+        "name_th": "สุขอนามัยช่องปาก"
+      },
+      {
+        "name_en": "Sanitary Paper",
+        "name_th": "กระดาษอนามัย"
+      },
+      {
+        "name_en": "Tools & Accessories",
+        "name_th": "เครื่องมือและอุปกรณ์"
+      },
+      {
+        "name_en": "Men's Grooming",
+        "name_th": "เครื่องแต่งกายบุรุษ"
+      },
+      {
+        "name_en": "Skin Care Tools",
+        "name_th": "เครื่องมือดูแลผิว"
+      },
+      {
+        "name_en": "Beauty Equipment",
+        "name_th": "อุปกรณ์ความงาม"
+      }
+    ]
+  },
+  {
+    "name_en": "Watches",
+    "name_th": "นาฬิกา",
+    "subcategories": [
+      {
+        "name_en": "Men's Watches",
+        "name_th": "นาฬิกาผู้ชาย"
+      },
+      {
+        "name_en": "Women's Watches",
+        "name_th": "นาฬิกาผู้หญิง"
+      },
+      {
+        "name_en": "Lover's Watches",
+        "name_th": "นาฬิกาคู่รัก"
+      },
+      {
+        "name_en": "Children's Watches",
+        "name_th": "นาฬิกาเด็ก"
+      },
+      {
+        "name_en": "Pocket & Fob Watches",
+        "name_th": "กระเป๋า & Fob นาฬิกา"
+      },
+      {
+        "name_en": "Watch Accessories",
+        "name_th": "อุปกรณ์เสริมนาฬิกา"
+      },
+      {
+        "name_en": "Women's Bracelet Watches",
+        "name_th": "นาฬิกาข้อมือผู้หญิง"
+      }
+    ]
+  },
+  {
+    "name_en": "Toys & Hobbies",
+    "name_th": "ของเล่น & งานอดิเรก",
+    "subcategories": [
+      {
+        "name_en": "Dolls & Stuffed Toys",
+        "name_th": "ตุ๊กตาและของเล่นยัดไส้"
+      },
+      {
+        "name_en": "Remote Control Toys",
+        "name_th": "ของเล่นควบคุมระยะไกล"
+      },
+      {
+        "name_en": "Classic Toys",
+        "name_th": "ของเล่นคลาสสิก"
+      },
+      {
+        "name_en": "Learning & Education",
+        "name_th": "การเรียนรู้และการศึกษา"
+      },
+      {
+        "name_en": "Outdoor Fun & Sports",
+        "name_th": "สนุกกลางแจ้งและกีฬา"
+      },
+      {
+        "name_en": "Action & Toy Figures",
+        "name_th": "แอ็คชั่นและของเล่น"
+      },
+      {
+        "name_en": "Model Building",
+        "name_th": "การสร้างแบบจำลอง"
+      },
+      {
+        "name_en": "Diecasts & Toy Vehicles",
+        "name_th": "Diecasts & ของเล่นยานพาหนะ"
+      },
+      {
+        "name_en": "Baby & Toddler Toys",
+        "name_th": "ของเล่นเสริมพัฒนาการ"
+      },
+      {
+        "name_en": "Electronic Toys",
+        "name_th": "ของเล่นอิเล็กทรอนิกส์"
+      },
+      {
+        "name_en": "Puzzles & Games",
+        "name_th": "ปริศนาและเกม"
+      },
+      {
+        "name_en": "Novelty & Gag Toys",
+        "name_th": "ของเล่นแปลกใหม่และปิดปาก"
+      },
+      {
+        "name_en": "Stress Relief Toy",
+        "name_th": "ของเล่นบรรเทาความเครียด"
+      },
+      {
+        "name_en": "Building & Construction Toys",
+        "name_th": "ของเล่นอาคารและการก่อสร้าง"
+      },
+      {
+        "name_en": "Kid's Party",
+        "name_th": "ปาร์ตี้เด็ก"
+      },
+      {
+        "name_en": "Hobby & Collectibles",
+        "name_th": "งานอดิเรกและของสะสม"
+      },
+      {
+        "name_en": "High Tech Toys",
+        "name_th": "ของเล่นไฮเทค"
+      },
+      {
+        "name_en": "Arts & Crafts, DIY toys",
+        "name_th": "ศิลปะและงานฝีมือของเล่น DIY"
+      },
+      {
+        "name_en": "Stuffed Animals & Plush",
+        "name_th": "ตุ๊กตาสัตว์และตุ๊กตา"
+      },
+      {
+        "name_en": "Popular Toys",
+        "name_th": "ของเล่นยอดนิยม"
+      },
+      {
+        "name_en": "Pretend Play",
+        "name_th": "แกล้งเล่น"
+      },
+      {
+        "name_en": "Pools & Water Fun",
+        "name_th": "สนุกกับสระว่ายน้ำและน้ำ"
+      }
+    ]
+  },
+  {
+    "name_en": "Weddings & Events",
+    "name_th": "งานแต่งงานและกิจกรรม",
+    "subcategories": [
+      {
+        "name_en": "Wedding Dresses",
+        "name_th": "ชุดแต่งงาน"
+      },
+      {
+        "name_en": "Evening Dresses",
+        "name_th": "ชุดราตรี"
+      },
+      {
+        "name_en": "Prom Dresses",
+        "name_th": "ชุดงานพรอม"
+      },
+      {
+        "name_en": "Wedding Party Dress",
+        "name_th": "ชุดงานแต่งงาน"
+      },
+      {
+        "name_en": "Wedding Accessories",
+        "name_th": "อุปกรณ์จัดงานแต่งงาน"
+      },
+      {
+        "name_en": "Celebrity-Inspired Dresses",
+        "name_th": "ชุดเดรสแรงบันดาลใจ"
+      },
+      {
+        "name_en": "Cocktail Dresses",
+        "name_th": "ชุดค็อกเทล"
+      },
+      {
+        "name_en": "Homecoming Dresses",
+        "name_th": "ชุดเหย้า"
+      },
+      {
+        "name_en": "Bridesmaid Dresses",
+        "name_th": "ชุดเพื่อนเจ้าสาว"
+      },
+      {
+        "name_en": "Mother of the Bride Dresses",
+        "name_th": "แม่ของชุดเจ้าสาว"
+      },
+      {
+        "name_en": "Quinceanera Dresses",
+        "name_th": "ชุด Quinceanera"
+      },
+      {
+        "name_en": "Dresses under $80",
+        "name_th": "เดรสภายใต้ $ 80"
+      }
+    ]
+  },
+  {
+    "name_en": "Novelty & Special Use",
+    "name_th": "ความแปลกใหม่และการใช้งานพิเศษ",
+    "subcategories": [
+      {
+        "name_en": "Costumes & Accessories",
+        "name_th": "เครื่องแต่งกายและอุปกรณ์เสริม"
+      },
+      {
+        "name_en": "Exotic Apparel",
+        "name_th": "เครื่องแต่งกายที่แปลกใหม่"
+      },
+      {
+        "name_en": "Stage & Dance Wear",
+        "name_th": "Stage & Dance Wear"
+      },
+      {
+        "name_en": "Traditional & Cultural Wear",
+        "name_th": "การสวมใส่แบบดั้งเดิมและวัฒนธรรม"
+      },
+      {
+        "name_en": "Work Wear & Uniforms",
+        "name_th": "ชุดทำงานและชุดทำงาน"
+      }
+    ]
+  },
+  {
+    "name_en": "Automobiles & Motorcycles",
+    "name_th": "รถยนต์และรถจักรยานยนต์",
+    "subcategories": [
+      {
+        "name_en": "Car Lights",
+        "name_th": "ไฟรถยนต์"
+      },
+      {
+        "name_en": "Auto Replacement Parts",
+        "name_th": "ชิ้นส่วนอะไหล่รถยนต์"
+      },
+      {
+        "name_en": "Car Electronics",
+        "name_th": "เครื่องใช้ไฟฟ้าในรถยนต์"
+      },
+      {
+        "name_en": "Interior Accessories",
+        "name_th": "อุปกรณ์ตกแต่งภายใน"
+      },
+      {
+        "name_en": "Car Repair Tools",
+        "name_th": "เครื่องมือซ่อมรถยนต์"
+      },
+      {
+        "name_en": "Motorcycle Accessories & Parts",
+        "name_th": "อะไหล่และชิ้นส่วนรถจักรยานยนต์"
+      },
+      {
+        "name_en": "Exterior Accessories",
+        "name_th": "อุปกรณ์เสริมภายนอก"
+      },
+      {
+        "name_en": "Car Wash & Maintenance",
+        "name_th": "ล้างรถและบำรุงรักษา"
+      },
+      {
+        "name_en": "ATV,RV,Boat & Other Vehicle",
+        "name_th": "รถ ATV, RV, เรือและยานพาหนะอื่น ๆ"
+      },
+      {
+        "name_en": "Travel & Roadway Product",
+        "name_th": "ท่องเที่ยว & สินค้าถนน"
+      }
+    ]
+  },
+  {
+    "name_en": "Lights & Lighting",
+    "name_th": "ไฟและแสงสว่าง",
+    "subcategories": [
+      {
+        "name_en": "Lamps & Shades",
+        "name_th": "โคมไฟและร่มเงา"
+      },
+      {
+        "name_en": "Ceiling Lights & Fans",
+        "name_th": "โคมไฟและพัดลมเพดาน"
+      },
+      {
+        "name_en": "Light Bulbs",
+        "name_th": "หลอดไฟ"
+      },
+      {
+        "name_en": "LED Lighting",
+        "name_th": "โคมไฟ LED"
+      },
+      {
+        "name_en": "Outdoor Lighting",
+        "name_th": "โคมไฟกลางแจ้ง"
+      },
+      {
+        "name_en": "LED Lamps",
+        "name_th": "หลอดไฟ LED"
+      },
+      {
+        "name_en": "Portable Lighting",
+        "name_th": "โคมไฟพกพา"
+      },
+      {
+        "name_en": "Commercial Lighting",
+        "name_th": "แสงสว่างเชิงพาณิชย์"
+      },
+      {
+        "name_en": "Night Lights",
+        "name_th": "ไฟกลางคืน"
+      },
+      {
+        "name_en": "Book Lights",
+        "name_th": "ไฟหนังสือ"
+      },
+      {
+        "name_en": "Professional Lighting",
+        "name_th": "แสงสว่างระดับมืออาชีพ"
+      },
+      {
+        "name_en": "Novelty Lighting",
+        "name_th": "แสงแปลกใหม่"
+      },
+      {
+        "name_en": "Holiday Lighting",
+        "name_th": "โคมไฟหยุด"
+      },
+      {
+        "name_en": "Lighting Accessories",
+        "name_th": "อุปกรณ์เสริมแสงสว่าง"
+      },
+      {
+        "name_en": "Under Cabinet Lights",
+        "name_th": "ภายใต้คณะรัฐมนตรีไฟ"
+      },
+      {
+        "name_en": "Special Engineering Lighting",
+        "name_th": "โคมไฟวิศวกรรมพิเศษ"
+      },
+      {
+        "name_en": "Vanity Lights",
+        "name_th": "ไฟโต๊ะเครื่องแป้ง"
+      }
+    ]
+  },
+  {
+    "name_en": "Furniture",
+    "name_th": "เฟอร์นิเจอร์",
+    "subcategories": [
+      {
+        "name_en": "Home Furniture",
+        "name_th": "เฟอร์นิเจอร์บ้าน"
+      },
+      {
+        "name_en": "Office Furniture",
+        "name_th": "เฟอร์นิเจอร์สำนักงาน"
+      },
+      {
+        "name_en": "Children Furniture",
+        "name_th": "เฟอร์นิเจอร์เด็ก"
+      },
+      {
+        "name_en": "Outdoor Furniture",
+        "name_th": "เฟอร์นิเจอร์กลางแจ้ง"
+      },
+      {
+        "name_en": "Commercial Furniture",
+        "name_th": "เฟอร์นิเจอร์เชิงพาณิชย์"
+      },
+      {
+        "name_en": "Café Furniture",
+        "name_th": "เฟอร์นิเจอร์คาเฟ่"
+      },
+      {
+        "name_en": "Bar Furniture",
+        "name_th": "เฟอร์นิเจอร์บาร์"
+      },
+      {
+        "name_en": "Furniture Accessories",
+        "name_th": "อุปกรณ์เฟอร์นิเจอร์"
+      },
+      {
+        "name_en": "Furniture Parts",
+        "name_th": "ชิ้นส่วนเฟอร์นิเจอร์"
+      }
+    ]
+  },
+  {
+    "name_en": "Electronic Components & Supplies",
+    "name_th": "ชิ้นส่วนอิเล็กทรอนิกส์และอุปกรณ์",
+    "subcategories": [
+      {
+        "name_en": "Active Components",
+        "name_th": "ส่วนประกอบที่ใช้งาน"
+      },
+      {
+        "name_en": "EL Products",
+        "name_th": "ผลิตภัณฑ์ EL"
+      },
+      {
+        "name_en": "Electronic Accessories & Supplies",
+        "name_th": "อุปกรณ์และเครื่องใช้อิเล็กทรอนิกส์"
+      },
+      {
+        "name_en": "Electronic Data Systems",
+        "name_th": "ระบบข้อมูลอิเล็กทรอนิกส์"
+      },
+      {
+        "name_en": "Electronic Signs",
+        "name_th": "สัญญาณอิเล็กทรอนิกส์"
+      },
+      {
+        "name_en": "Electronics Production Machinery",
+        "name_th": "เครื่องจักรผลิตอุปกรณ์อิเล็กทรอนิกส์"
+      },
+      {
+        "name_en": "Electronics Stocks",
+        "name_th": "หุ้นอิเล็กทรอนิกส์"
+      },
+      {
+        "name_en": "Optoelectronic Displays",
+        "name_th": "Optoelectronic แสดง"
+      },
+      {
+        "name_en": "Other Electronic Components",
+        "name_th": "ส่วนประกอบอิเล็กทรอนิกส์อื่น ๆ"
+      },
+      {
+        "name_en": "Passive Components",
+        "name_th": "ส่วนประกอบแฝง"
+      }
+    ]
+  },
+  {
+    "name_en": "Education & Office Supplies",
+    "name_th": "อุปกรณ์การศึกษาและสำนักงาน",
+    "subcategories": [
+      {
+        "name_en": "Pens, Pencils & Writing Supplies",
+        "name_th": "ปากกา, ดินสอและอุปกรณ์การเขียน"
+      },
+      {
+        "name_en": "Notebooks & Writing Pads",
+        "name_th": "สมุดบันทึกและแผ่นสำหรับเขียน"
+      },
+      {
+        "name_en": "School & Educational Supplies",
+        "name_th": "อุปกรณ์การศึกษาและโรงเรียน"
+      },
+      {
+        "name_en": "Painting Supplies",
+        "name_th": "วัสดุจิตรกรรม"
+      },
+      {
+        "name_en": "Tapes, Adhesives & Fasteners",
+        "name_th": "เทปกาวและตัวยึด"
+      },
+      {
+        "name_en": "Stationery Stickers",
+        "name_th": "สติกเกอร์เครื่องเขียน"
+      },
+      {
+        "name_en": "Desk Accessories & Organizer",
+        "name_th": "อุปกรณ์เสริมโต๊ะ & Organizer"
+      },
+      {
+        "name_en": "Office Binding Supplies",
+        "name_th": "เครื่องเข้าเล่มสำนักงาน"
+      },
+      {
+        "name_en": "Labels, Indexes & Stamps",
+        "name_th": "ป้ายกำกับดัชนีและแสตมป์"
+      },
+      {
+        "name_en": "Paper",
+        "name_th": "กระดาษ"
+      },
+      {
+        "name_en": "Calendars, Planners & Cards",
+        "name_th": "ปฏิทินนักวางแผนและการ์ด"
+      },
+      {
+        "name_en": "Cutting Supplies",
+        "name_th": "อุปกรณ์ตัด"
+      },
+      {
+        "name_en": "Books",
+        "name_th": "หนังสือ"
+      },
+      {
+        "name_en": "Presentation Boards",
+        "name_th": "บอร์ดการนำเสนอ"
+      },
+      {
+        "name_en": "Filing Products",
+        "name_th": "ยื่นผลิตภัณฑ์"
+      },
+      {
+        "name_en": "Mail & Shipping Supplies",
+        "name_th": "พัสดุไปรษณีย์และพัสดุ"
+      }
+    ]
+  },
+  {
+    "name_en": "Home Appliances",
+    "name_th": "เครื่องใช้ในบ้าน",
+    "subcategories": [
+      {
+        "name_en": "Kitchen Appliances",
+        "name_th": "เครื่องใช้ในครัว"
+      },
+      {
+        "name_en": "Household Appliances",
+        "name_th": "เครื่องใช้ในครัวเรือน"
+      },
+      {
+        "name_en": "Personal Care Appliances",
+        "name_th": "อุปกรณ์ดูแลส่วนบุคคล"
+      },
+      {
+        "name_en": "Major Appliances",
+        "name_th": "เครื่องใช้ไฟฟ้ารายใหญ่"
+      },
+      {
+        "name_en": "Commercial Appliances",
+        "name_th": "เครื่องใช้ในเชิงพาณิชย์"
+      },
+      {
+        "name_en": "Home Appliance Parts",
+        "name_th": "อะไหล่เครื่องใช้ในบ้าน"
+      }
+    ]
+  },
+  {
+    "name_en": "Home Improvement",
+    "name_th": "การปรับปรุงบ้าน",
+    "subcategories": [
+      {
+        "name_en": "Lights & Lighting",
+        "name_th": "ไฟและแสงสว่าง"
+      },
+      {
+        "name_en": "Home Appliances",
+        "name_th": "เครื่องใช้ในบ้าน"
+      },
+      {
+        "name_en": "Bathroom Fixtures",
+        "name_th": "ติดตั้งในห้องน้ำ"
+      },
+      {
+        "name_en": "Kitchen Fixtures",
+        "name_th": "ติดตั้งห้องครัว"
+      },
+      {
+        "name_en": "Hardware",
+        "name_th": "ฮาร์ดแวร์"
+      },
+      {
+        "name_en": "Electrical Equipments & Supplies",
+        "name_th": "อุปกรณ์และเครื่องใช้ไฟฟ้า"
+      },
+      {
+        "name_en": "Building Supplies",
+        "name_th": "วัสดุก่อสร้าง"
+      },
+      {
+        "name_en": "Painting Supplies & Wall Treatments",
+        "name_th": "อุปกรณ์พ่นสีและผนัง"
+      },
+      {
+        "name_en": "Plumbing",
+        "name_th": "ประปา"
+      },
+      {
+        "name_en": "Family Intelligence System",
+        "name_th": "ระบบครอบครัวอัจฉริยะ"
+      }
+    ]
+  },
+  {
+    "name_en": "Food",
+    "name_th": "อาหาร",
+    "subcategories": [
+      {
+        "name_en": "Coffee",
+        "name_th": "กาแฟ"
+      },
+      {
+        "name_en": "Grain Products",
+        "name_th": "ผลิตภัณฑ์ข้าว"
+      },
+      {
+        "name_en": "Tea",
+        "name_th": "ชา"
+      },
+      {
+        "name_en": "Nut & Kernel",
+        "name_th": "ถั่วและเคอร์เนล"
+      },
+      {
+        "name_en": "Grocery",
+        "name_th": "ร้านขายของชำ"
+      },
+      {
+        "name_en": "Dried Goods / Local Specialties(127468931)--Superfoods",
+        "name_th": "สินค้าแห้ง / อาหารพื้นเมือง"
+      },
+      {
+        "name_en": "Canned Food",
+        "name_th": "อาหารกระป๋อง"
+      }
+    ]
+  },
+  {
+    "name_en": "Security & Protection",
+    "name_th": "ความปลอดภัยและการป้องกัน",
+    "subcategories": [
+      {
+        "name_en": "Video Surveillance",
+        "name_th": "การเฝ้าระวังวิดีโอ"
+      },
+      {
+        "name_en": "Security Alarm",
+        "name_th": "ปลุกความปลอดภัย"
+      },
+      {
+        "name_en": "Access Control",
+        "name_th": "การควบคุมการเข้าถึง"
+      },
+      {
+        "name_en": "Workplace Safety Supplies",
+        "name_th": "อุปกรณ์ความปลอดภัยในสถานที่ทำงาน"
+      },
+      {
+        "name_en": "Door Intercom",
+        "name_th": "ประตูอินเตอร์คอม"
+      },
+      {
+        "name_en": "Self Defense Supplies",
+        "name_th": "อุปกรณ์ป้องกันตัวเอง"
+      },
+      {
+        "name_en": "Smart Card System",
+        "name_th": "ระบบสมาร์ทการ์ด"
+      },
+      {
+        "name_en": "Building Automation",
+        "name_th": "ระบบควบคุมอาคาร"
+      },
+      {
+        "name_en": "Fire Protection",
+        "name_th": "ป้องกันไฟ"
+      },
+      {
+        "name_en": "Emergency Kits",
+        "name_th": "ชุดอุปกรณ์ฉุกเฉิน"
+      },
+      {
+        "name_en": "Roadway Safety",
+        "name_th": "ความปลอดภัยบนถนน"
+      },
+      {
+        "name_en": "Safes",
+        "name_th": "ตู้นิรภัย"
+      },
+      {
+        "name_en": "Lightning Protection",
+        "name_th": "ป้องกันฟ้าผ่า"
+      },
+      {
+        "name_en": "Transmission & Cables",
+        "name_th": "การส่ง & สายเคเบิล"
+      },
+      {
+        "name_en": "Security Inspection Device",
+        "name_th": "อุปกรณ์ตรวจสอบความปลอดภัย"
+      },
+      {
+        "name_en": "IoT Devices",
+        "name_th": "อุปกรณ์ IoT"
+      },
+      {
+        "name_en": "Public Broadcasting",
+        "name_th": "แพร่ภาพสาธารณะ"
+      }
+    ]
+  },
+  {
+    "name_en": "Tools",
+    "name_th": "เครื่องมือ",
+    "subcategories": [
+      {
+        "name_en": "Measurement & Analysis Instruments",
+        "name_th": "เครื่องมือวัดและวิเคราะห์"
+      },
+      {
+        "name_en": "Power Tools",
+        "name_th": "เครื่องมือไฟฟ้า"
+      },
+      {
+        "name_en": "Hand Tools",
+        "name_th": "เครื่องมือช่าง"
+      },
+      {
+        "name_en": "Machine Tools & Accessories",
+        "name_th": "เครื่องมือและอุปกรณ์เสริม"
+      },
+      {
+        "name_en": "Tool Sets",
+        "name_th": "ชุดเครื่องมือ"
+      },
+      {
+        "name_en": "Welding Equipment",
+        "name_th": "อุปกรณ์เชื่อม"
+      },
+      {
+        "name_en": "Welding & Soldering Supplies",
+        "name_th": "อุปกรณ์การเชื่อมและการบัดกรี"
+      },
+      {
+        "name_en": "Woodworking Machinery & Parts",
+        "name_th": "เครื่องจักรและชิ้นส่วนงานไม้"
+      },
+      {
+        "name_en": "Tool Parts",
+        "name_th": "อะไหล่เครื่องมือ"
+      },
+      {
+        "name_en": "Garden Tools",
+        "name_th": "เครื่องมือทำสวน"
+      },
+      {
+        "name_en": "Hand & Power Tool Accessories",
+        "name_th": "อุปกรณ์เสริมเครื่องมือไฟฟ้า & มือ"
+      },
+      {
+        "name_en": "Abrasive Tools",
+        "name_th": "เครื่องมือขัด"
+      },
+      {
+        "name_en": "Tool Organizers",
+        "name_th": "เครื่องมือจัดระเบียบ"
+      },
+      {
+        "name_en": "Construction Tools",
+        "name_th": "เครื่องมือก่อสร้าง"
+      },
+      {
+        "name_en": "Riveter Guns",
+        "name_th": "ปืนตอกหมุด"
+      },
+      {
+        "name_en": "Lifting Tools & Accessories",
+        "name_th": "เครื่องมือยกและอุปกรณ์เสริม"
+      },
+      {
+        "name_en": "Abrasives",
+        "name_th": "กัดกร่อน"
+      }
+    ]
+  },
+  {
+    "name_en": "Hair Extensions & Wigs",
+    "name_th": "นามสกุลผมและวิกผม",
+    "subcategories": [
+      {
+        "name_en": "Human Hair Weaves",
+        "name_th": "ผมมนุษย์สาน"
+      },
+      {
+        "name_en": "Lace Wigs",
+        "name_th": "วิกผมลูกไม้"
+      },
+      {
+        "name_en": "Hair Extensions",
+        "name_th": "การต่อผม"
+      },
+      {
+        "name_en": "Salon Hair Supply Chain",
+        "name_th": "ร้านทำผมซัพพลายเชน"
+      },
+      {
+        "name_en": "Synthetic Wigs",
+        "name_th": "วิกผมสังเคราะห์"
+      },
+      {
+        "name_en": "Hair Braids",
+        "name_th": "ผมถักเปีย"
+      },
+      {
+        "name_en": "Synthetic Extensions",
+        "name_th": "นามสกุลสังเคราะห์"
+      },
+      {
+        "name_en": "Hair Pieces",
+        "name_th": "ชิ้นผม"
+      },
+      {
+        "name_en": "Hair Salon Tools & Accessories",
+        "name_th": "เครื่องมือและอุปกรณ์ทำผม"
+      },
+      {
+        "name_en": "DIY Wigs",
+        "name_th": "วิกผม DIY"
+      }
+    ]
+  },
+  {
+    "name_en": "Apparel Accessories",
+    "name_th": "เครื่องแต่งกายและอุปกรณ์เสริม",
+    "subcategories": [
+      {
+        "name_en": "Women's Glasses",
+        "name_th": "แว่นตาผู้หญิง"
+      },
+      {
+        "name_en": "Women's Hats",
+        "name_th": "หมวกสตรี"
+      },
+      {
+        "name_en": "Women's Scarves",
+        "name_th": "ผ้าพันคอสตรี"
+      },
+      {
+        "name_en": "Women's Hair Accessories",
+        "name_th": "เครื่องประดับผมผู้หญิง"
+      },
+      {
+        "name_en": "Women's Gloves",
+        "name_th": "ถุงมือสตรี"
+      },
+      {
+        "name_en": "Women's Belts",
+        "name_th": "เข็มขัดสตรี"
+      },
+      {
+        "name_en": "Women's Accessories",
+        "name_th": "เครื่องประดับสตรี"
+      },
+      {
+        "name_en": "Men's Glasses",
+        "name_th": "แว่นตาผู้ชาย"
+      },
+      {
+        "name_en": "Men's Hats",
+        "name_th": "หมวกผู้ชาย"
+      },
+      {
+        "name_en": "Men's Scarves",
+        "name_th": "ผ้าพันคอผู้ชาย"
+      },
+      {
+        "name_en": "Men's Belts",
+        "name_th": "เข็มขัดผู้ชาย"
+      },
+      {
+        "name_en": "Men's Gloves",
+        "name_th": "ถุงมือผู้ชาย"
+      },
+      {
+        "name_en": "Men's Ties & Handkerchiefs",
+        "name_th": "ความสัมพันธ์ของผู้ชายและผ้าเช็ดหน้า"
+      },
+      {
+        "name_en": "Men's Accessories",
+        "name_th": "เครื่องประดับสำหรับผู้ชาย"
+      },
+      {
+        "name_en": "Girl's Accessories",
+        "name_th": "อุปกรณ์เสริมของผู้หญิง"
+      },
+      {
+        "name_en": "Boy's Accessories",
+        "name_th": "อุปกรณ์เสริมของเด็กชาย"
+      },
+      {
+        "name_en": "Garment Fabrics & Accessories",
+        "name_th": "เสื้อผ้าผ้า & อุปกรณ์เสริม"
+      }
+    ]
+  },
+  {
+    "name_en": "Underwear & Sleepwears",
+    "name_th": "ชุดชั้นในและชุดนอน",
+    "subcategories": [
+      {
+        "name_en": "Women's Intimates",
+        "name_th": "ชุดชั้นในสตรี"
+      },
+      {
+        "name_en": "Women's Sleepwears",
+        "name_th": "ชุดนอนสตรี"
+      },
+      {
+        "name_en": "Women's Socks & Hosiery",
+        "name_th": "ถุงเท้าสตรี & ร้านขายชุดชั้น"
+      },
+      {
+        "name_en": "Men's Underwear",
+        "name_th": "ชุดชั้นในชาย"
+      },
+      {
+        "name_en": "Men's Socks",
+        "name_th": "ถุงเท้าผู้ชาย"
+      },
+      {
+        "name_en": "Men's Sleep & Lounge",
+        "name_th": "ผู้ชาย Sleep & Lounge"
+      },
+      {
+        "name_en": "Women's panties",
+        "name_th": "กางเกงชั้นในสตรี"
+      }
+    ]
+  }
+]
