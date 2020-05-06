@@ -4,12 +4,11 @@
 - [Generals](#generals)
   - [Hello World](#hello-world)
   - [Errors](#errors)
-  - [Authentication](#authentication)
+  - [Authorization](#authorization)
   - [Pagination](#pagination)
 - [Product](#product)
   - [Product Overview](#product-overview)
   - [The Product Object](#the-product-object)
-    - [Attributes](#attributes)
   - [Retrieve a product](#retrieve-a-product)
     - [Get a product with a paticular `id`](#get-a-product-with-a-paticular-id)
   - [Create a product](#create-a-product)
@@ -27,6 +26,7 @@
     - [Get all products of a particular category (`category_id`)](#get-all-products-of-a-particular-category-category_id)
   - [Checkout a product](#checkout-a-product)
 - [Category](#category)
+    - [The Category Object](#the-category-object)
     - [Category Overview](#category-overview)
     - [Retrieve Category Tree](#retrieve-category-tree)
     - [Retrieve Category by ID](#retrieve-category-by-id)
@@ -157,7 +157,7 @@ Product api has the following endpoints:
 |DELETE| /api/v1/users/:user_id/products/:id| Delete a product [[example]](#delete-a-product) |
 
 ## The Product Object
-### Attributes
+### Product Attributes
 | Attribute | Type | Description |
 |-----------|------|-------------|
 |**id** |integer |ID of the product|
@@ -549,6 +549,16 @@ If `sold_quantity` less than 0 or the parameter `quantity` is invalid, server re
 |-----|----------|-----------------------|
 | GET | /api/v1/categories | Retrieve all categories (tree) [[example]](#retrieve-category-tree) |
 | GET | /api/v1/categories/:id | Retrieve a category by id [[example]](#retrieve-category-by-id) |
+
+## The Category Object
+### Category Attributes
+| Attribute | Type | Description |
+|-----------|------|-------------|
+|**id** |integer |ID of the category|
+|**name_en** |string |English name of the category|
+|**name_th** |string |Thai name of the category|
+|**parent_id** |integer |id of parent category|
+|**subcategories** |object | A list of subcategories|
 
 ## Retrieve Category Tree
 ```
