@@ -62,8 +62,18 @@ Content-Type: application/json
 |**429**| Too Many Requests |Too many requests hit the API too quickly. We recommend an exponential backoff of your requests.|
 |**500, 502, 503, 504**| Server Errors |Something went wrong on server's end. (These are rare.)|
 
-## Authentication
-To be updated
+## Authorization
+Each request require JWT token received from **SOS Authentication service**.
+Only `admin` can use the following endpoints:
+
+|Method| Endpoint| Description |
+|-----|----------|-----------------------|
+|GET|    /api/v1/users/:user_id/products| Get all products of a particular user(admin) [[example]](#get-all-products-of-a-particular-user-user_id) |
+|POST|   /api/v1/users/:user_id/products| Create a product [[example]](#create-a-product) |
+|PATCH|  /api/v1/users/:user_id/products/:id| Update a product [[example]](#update-a-product) |
+|PUT|    /api/v1/users/:user_id/products/:id| Update a product [[example]](#update-a-product) |
+|DELETE| /api/v1/users/:user_id/products/:id| Delete a product [[example]](#delete-a-product) |
+
 
 ## Pagination
 Supported endpoints:
@@ -127,13 +137,20 @@ GET /api/v1/products?page=1
 ## Product Overview
 Product api has the following endpoints:
 
+**User Endponts:**
+
 |Method| Endpoint| Description |
 |-----|----------|-----------------------|
 |GET|    /api/v1/products| Get all products [[example]](#get-all-products) |
 |GET|    /api/v1/products/:id| Get a product with a paticular `id`[[example]](#get-a-product-with-a-paticular-id) |
 |POST|   /api/v1/products/:id/checkout | Checkout a product [[example]](#checkout-a-product) |
 |GET|    /api/vi/categories/:category_id/products| Get all products of a particular category [[example]](#get-all-products-of-a-particular-category-category_id) |
-|GET|    /api/v1/users/:user_id/products| Get all products of a particular user [[example]](#get-all-products-of-a-particular-user-user_id) |
+
+**Admin Endpoints:**
+
+|Method| Endpoint| Description |
+|-----|----------|-----------------------|
+|GET|    /api/v1/users/:user_id/products| Get all products of a particular user(admin) [[example]](#get-all-products-of-a-particular-user-user_id) |
 |POST|   /api/v1/users/:user_id/products| Create a product [[example]](#create-a-product) |
 |PATCH|  /api/v1/users/:user_id/products/:id| Update a product [[example]](#update-a-product) |
 |PUT|    /api/v1/users/:user_id/products/:id| Update a product [[example]](#update-a-product) |
@@ -514,7 +531,7 @@ On product id = 1, `sold_quantity` += 4 (from 0) and `stock` -= 4 (from 90)
 If `sold_quantity` less than 0 or the parameter `quantity` is invalid, server returns **400 Bad Request** and the following message:
 ```json
 {
-    "error": "Unable to checkout."
+    "errors": "Unable to checkout."
 }
 ```
 
