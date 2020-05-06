@@ -1,36 +1,40 @@
 class Api::V1::Users::ProductsController < ApplicationController
+  before_action :authorize_admin, if: :require_authorization?
+  before_action :verify_user, only: %i[create destroy], if: :require_authorization?
   before_action :find_product, only: %i[show update destroy]
 
   def index
-    @products = Product.where(user_id: params[:user_id])
+    @products_of_user = Product.where(user_id: params[:user_id])
+    @products = @products_of_user.page(params[:page])
+    @total_pages = @products.total_pages
+    @current_page = @products.current_page
+    @total_products = @products_of_user.count
+    @limit_per_page = @products.limit_value
   end
 
   def create
     @product = Product.new(product_params.merge(user_id: params[:user_id]))
     if @product.save
-      render json: @product, status: :created
+      render status: :created
     else
-      render json: { error: 'Unable to create product.' }, status: :bad_request
+      render json: {errors: @product.errors.full_messages}, status: :bad_request
     end
   end
 
   def update
-    if @product
-      @product.update(product_params)
-      render json: { message: 'Product successfully updated.' }, status: :ok
+    if @product.update(product_params)
+      render status: :ok
     else
-      render json: { error: 'Unable to update product.' }, status: :bad_request
+      render json: {errors: @product.errors.full_messages}, status: :bad_request
     end
   end
 
   def destroy
-    if @product
-      @product.destroy
-      render json: { message: 'Product successfully deleted.' }, status: :ok
+    if @product.destroy
+      render json: {message: 'Product successfully deleted.'}, status: :ok
     else
-      render json: { error: 'Unable to delete product.' }, status: :bad_request
+      render json: {errors: 'Unable to delete product.'}, status: :bad_request
     end
-
   end
 
   private
@@ -40,6 +44,12 @@ class Api::V1::Users::ProductsController < ApplicationController
   end
 
   def find_product
-    @product = Product.find(params[:id])
+    @product = Product.find_by(id: params[:id], user_id: params[:user_id])
+    render json: {errors: 'Not Found'}, status: :not_found if @product.nil?
   end
+
+  def verify_user
+    render json: {errors: 'No Permission'}, status: :forbidden if params[:user_id] != @jwt_decoded[:user_id].to_s
+  end
+
 end
