@@ -429,6 +429,10 @@ GET /api/v1/users/:user_id/products
 ```
 
 ### Get all products of a particular category (`category_id`)
+```
+GET /api/vi/categories/:category_id/products
+```
+
 **Returns** a list of products of a given `category_id` (e.g. `category_id` = 5):
 ```json
 {
