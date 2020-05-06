@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::API
 
   def authorize_admin
-    puts "Authorize? #{ENV['REQUIRE_AUTHORIZE']}"
     return true if ENV['REQUIRE_AUTHORIZE'] == '0'
 
     header = request.headers['Authorization']
