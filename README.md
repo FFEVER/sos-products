@@ -4,12 +4,11 @@
 - [Generals](#generals)
   - [Hello World](#hello-world)
   - [Errors](#errors)
-  - [Authentication](#authentication)
+  - [Authorization](#authorization)
   - [Pagination](#pagination)
 - [Product](#product)
   - [Product Overview](#product-overview)
   - [The Product Object](#the-product-object)
-    - [Attributes](#attributes)
   - [Retrieve a product](#retrieve-a-product)
     - [Get a product with a paticular `id`](#get-a-product-with-a-paticular-id)
   - [Create a product](#create-a-product)
@@ -27,6 +26,7 @@
     - [Get all products of a particular category (`category_id`)](#get-all-products-of-a-particular-category-category_id)
   - [Checkout a product](#checkout-a-product)
 - [Category](#category)
+    - [The Category Object](#the-category-object)
     - [Category Overview](#category-overview)
     - [Retrieve Category Tree](#retrieve-category-tree)
     - [Retrieve Category by ID](#retrieve-category-by-id)
@@ -157,7 +157,7 @@ Product api has the following endpoints:
 |DELETE| /api/v1/users/:user_id/products/:id| Delete a product [[example]](#delete-a-product) |
 
 ## The Product Object
-### Attributes
+### Product Attributes
 | Attribute | Type | Description |
 |-----------|------|-------------|
 |**id** |integer |ID of the product|
@@ -329,50 +329,38 @@ GET /api/v1/products
 
 **Returns** a list of products:
 ```json
-[
-    {
-        "id": 8,
-        "title": "Product one of user 1",
-        "user_id": 1,
-        "long_desc": "This is my product one of user 1.",
-        "price": 50.0,
-        "stock": 300,
-        "sold_quantity": 10,
-        "created_at": "2020-04-19T14:01:48.807Z",
-        "updated_at": "2020-04-19T14:01:48.807Z",
-        "categories": {
-            "id": 5,
-            "name_en": "Camera & Photo",
-            "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
-            "parent_id": null,
-            "subcategories": {
-                "id": 8,
-                "name_en": "CCTV",
-                "name_th": "กล้องวงจรปิด",
-                "parent_id": 5
-            }
-        }
-    },
-    {
-        "id": 9,
-        "title": "Product one of user 2",
-        "user_id": 2,
-        "long_desc": "This is my product one of user 2.",
-        "price": 30000.0,
-        "stock": 20,
-        "sold_quantity": 0,
-        "created_at": "2020-04-19T14:01:48.822Z",
-        "updated_at": "2020-04-19T14:01:48.822Z",
-        "categories": {
+{
+    "products": [
+        {
             "id": 1,
-            "name_en": "Bags",
-            "name_th": "กระเป๋า",
-            "parent_id": null,
-            "subcategories": {}
-        }
-    },
-    ...
-]
+            "title": "Coach2020 กระเป๋าหญิงถังกระเป๋าสบายๆ",
+            "user_id": 1,
+            "long_desc": "คุณสามารถสั่งซื้อโดยตรงและเราจะจัดส่งโดยเร็วที่สุด",
+            "price": 50.0,
+            "stock": 300,
+            "sold_quantity": 10,
+            "created_at": "2020-04-30T05:03:57.631Z",
+            "updated_at": "2020-04-30T05:03:57.631Z",
+            "categories": {
+                "id": 117,
+                "name_en": "Luggage & Bags",
+                "name_th": "กระเป๋าและกระเป๋า",
+                "parent_id": null,
+                "subcategories": {
+                    "id": 118,
+                    "name_en": "Women's Bags",
+                    "name_th": "กระเป๋าสตรี",
+                    "parent_id": 117
+                }
+            }
+        },
+        ...
+    ],
+    "current_page": 1,
+    "total_pages": 1,
+    "total_products": 4,
+    "limit_per_page": 15
+}
 ```
 
 ### Get all products of a particular user (`user_id`)
@@ -383,110 +371,126 @@ GET /api/v1/users/:user_id/products
 
 **Returns** a list of products of a given `user_id` (e.g. `user_id` = 1):
 ```json
-[
-    {
-        "id": 8,
-        "title": "Product one of user 1",
-        "user_id": 1,
-        "long_desc": "This is my product one of user 1.",
-        "price": 50.0,
-        "stock": 300,
-        "sold_quantity": 10,
-        "created_at": "2020-04-19T14:01:48.807Z",
-        "updated_at": "2020-04-19T14:01:48.807Z",
-        "categories": {
-            "id": 5,
-            "name_en": "Camera & Photo",
-            "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
-            "parent_id": null,
-            "subcategories": {
-                "id": 8,
-                "name_en": "CCTV",
-                "name_th": "กล้องวงจรปิด",
-                "parent_id": 5
-            }
-        }
-    },
-    {
-        "id": 12,
-        "title": "Product two of user 1",
-        "user_id": 1,
-        "long_desc": "This is a product two of user 1",
-        "price": 500.0,
-        "stock": 19,
-        "sold_quantity": 40,
-        "created_at": "2020-04-19T15:50:49.029Z",
-        "updated_at": "2020-04-19T15:50:49.029Z",
-        "categories": {
-            "id": 5,
-            "name_en": "Camera & Photo",
-            "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
-            "parent_id": null,
-            "subcategories": {
-                "id": 8,
-                "name_en": "CCTV",
-                "name_th": "กล้องวงจรปิด",
-                "parent_id": 5
-            }
-        }
-    },
-    ...
-]
+{
+  "products": [
+      {
+          "id": 1,
+          "title": "Product of user id 1",
+          "user_id": 1,
+          "long_desc": "Product of user id 1",
+          "price": 50.0,
+          "stock": 300,
+          "sold_quantity": 10,
+          "created_at": "2020-04-30T05:03:57.631Z",
+          "updated_at": "2020-04-30T05:03:57.631Z",
+          "categories": {
+              "id": 117,
+              "name_en": "Luggage & Bags",
+              "name_th": "กระเป๋าและกระเป๋า",
+              "parent_id": null,
+              "subcategories": {
+                  "id": 118,
+                  "name_en": "Women's Bags",
+                  "name_th": "กระเป๋าสตรี",
+                  "parent_id": 117
+              }
+          }
+      },
+      {
+          "id": 2,
+          "title": "Another product of user id 1",
+          "user_id": 1,
+          "long_desc": "Another product of user id 1",
+          "price": 30000.0,
+          "stock": 20,
+          "sold_quantity": 0,
+          "created_at": "2020-04-30T05:03:57.681Z",
+          "updated_at": "2020-04-30T05:03:57.681Z",
+          "categories": {
+              "id": 76,
+              "name_en": "Consumer Electronics",
+              "name_th": "เครื่องใช้ไฟฟ้า",
+              "parent_id": null,
+              "subcategories": {
+                  "id": 88,
+                  "name_en": "360° Video Cameras & Accessories",
+                  "name_th": "กล้องวิดีโอ & อุปกรณ์เสริม 360 °",
+                  "parent_id": 76
+              }
+          }
+      },
+      ...
+  ],
+  "current_page": 1,
+  "total_pages": 1,
+  "total_products": 4,
+  "limit_per_page": 15
+}
 ```
 
 ### Get all products of a particular category (`category_id`)
+```
+GET /api/vi/categories/:category_id/products
+```
+
 **Returns** a list of products of a given `category_id` (e.g. `category_id` = 5):
 ```json
-[
-    {
-        "id": 8,
-        "title": "CCTV Product",
-        "user_id": 1,
-        "long_desc": "This is a CCTV product",
-        "price": 30000,
-        "stock": 300,
-        "sold_quantity": 10,
-        "created_at": "2020-04-19T14:01:48.807Z",
-        "updated_at": "2020-04-19T14:01:48.807Z",
-        "categories": {
-            "id": 5,
-            "name_en": "Camera & Photo",
-            "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
-            "parent_id": null,
-            "subcategories": {
-                "id": 8,
-                "name_en": "CCTV",
-                "name_th": "กล้องวงจรปิด",
-                "parent_id": 5
+{
+    "products": [
+        {
+            "id": 8,
+            "title": "CCTV Product",
+            "user_id": 1,
+            "long_desc": "This is a CCTV product",
+            "price": 30000,
+            "stock": 300,
+            "sold_quantity": 10,
+            "created_at": "2020-04-19T14:01:48.807Z",
+            "updated_at": "2020-04-19T14:01:48.807Z",
+            "categories": {
+                "id": 5,
+                "name_en": "Camera & Photo",
+                "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
+                "parent_id": null,
+                "subcategories": {
+                    "id": 8,
+                    "name_en": "CCTV",
+                    "name_th": "กล้องวงจรปิด",
+                    "parent_id": 5
+                }
             }
-        }
-    },
-    {
-        "id": 18,
-        "title": "This is a Digital Camera",
-        "user_id": 2,
-        "long_desc": "This is a Digital Camera product",
-        "price": 400000,
-        "stock": 19,
-        "sold_quantity": 40,
-        "created_at": "2020-04-19T15:50:49.029Z",
-        "updated_at": "2020-04-19T15:50:49.029Z",
-        "categories": {
-            "id": 5,
-            "name_en": "Camera & Photo",
-            "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
-            "parent_id": null,
-            "subcategories": {
-                 "id": 6,
-                 "name_en": "Digital Camera",
-                 "name_th": "กล้องดิจิตอล",
-                 "parent_id": 5,
-                 "subcategories": []
-             }
-        }
-    },
-    ...
-]
+        },
+        {
+            "id": 18,
+            "title": "This is a Digital Camera",
+            "user_id": 2,
+            "long_desc": "This is a Digital Camera product",
+            "price": 400000,
+            "stock": 19,
+            "sold_quantity": 40,
+            "created_at": "2020-04-19T15:50:49.029Z",
+            "updated_at": "2020-04-19T15:50:49.029Z",
+            "categories": {
+                "id": 5,
+                "name_en": "Camera & Photo",
+                "name_th": "กล้องและอุปกรณ์ถ่ายภาพ",
+                "parent_id": null,
+                "subcategories": {
+                     "id": 6,
+                     "name_en": "Digital Camera",
+                     "name_th": "กล้องดิจิตอล",
+                     "parent_id": 5,
+                     "subcategories": []
+                 }
+            }
+        },
+        ...
+    ],
+    "current_page": 1,
+    "total_pages": 1,
+    "total_products": 4,
+    "limit_per_page": 15
+}
 ```
 
 ## Checkout a product
@@ -545,6 +549,16 @@ If `sold_quantity` less than 0 or the parameter `quantity` is invalid, server re
 |-----|----------|-----------------------|
 | GET | /api/v1/categories | Retrieve all categories (tree) [[example]](#retrieve-category-tree) |
 | GET | /api/v1/categories/:id | Retrieve a category by id [[example]](#retrieve-category-by-id) |
+
+## The Category Object
+### Category Attributes
+| Attribute | Type | Description |
+|-----------|------|-------------|
+|**id** |integer |ID of the category|
+|**name_en** |string |English name of the category|
+|**name_th** |string |Thai name of the category|
+|**parent_id** |integer |id of parent category|
+|**subcategories** |object | A list of subcategories|
 
 ## Retrieve Category Tree
 ```

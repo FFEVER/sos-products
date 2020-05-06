@@ -36,8 +36,8 @@ module SOSProducts
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3000', 'https://sos-products.herokuapp.com/'
-        resource '*', :headers => :any, :methods => [:get]
+        origins '*'
+        resource '*', headers: :any, methods: %i[get post put patch delete options head]
       end
     end
   end
